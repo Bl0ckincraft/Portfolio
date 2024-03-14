@@ -1,4 +1,4 @@
-// import './styles/app.scss'
+import './styles/app.scss'
 import './scripts/loading.js'
 import './scripts/theme.js'
 import './scripts/parcoursup.js'
