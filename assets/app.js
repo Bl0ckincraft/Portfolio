@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 // Custom Background Code
-document.addEventListener("DOMContentLoaded", function() {
+/*document.addEventListener("DOMContentLoaded", function() {
     const background = document.getElementById("background")
 
     if (background != null && typeof background != "undefined") {
@@ -277,7 +277,7 @@ document.addEventListener("DOMContentLoaded", function() {
             generateBackground()
         })
     }
-})
+})*/
 
 // Card
 document.addEventListener("DOMContentLoaded", () => {
