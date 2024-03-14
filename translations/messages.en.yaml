@@ -1,0 +1,132 @@
+loading: "Loading..."
+welcome: "Welcome"
+parcoursup:
+  welcome: "Welcome !"
+  content: "Hello, thank you for visiting my portfolio, which I have anonymized for the occasion.<br/>For a better experience, I can advise you to view it on a computer and navigate using the menu in the top right corner.<br/>I wish you a pleasant visit!"
+  close: "Close"
+home:
+  state: "Passionate about development"
+  aboutTitle: "About Me"
+  about:
+    me:
+      title: "Who I am"
+      content: "Hello, I'm John, a young x year old student. My passion is IT but above all development because of its creative aspect full of possibilities which makes each project technically enriching. I discovered coding at the age of 9, and truly started coding at 13."
+    studies:
+      title: "Studies"
+      content: "I am currently in the twelfth grade in the general track. I chose Mathematics, Digital & Computer Science, and Physics-Chemistry as my specialties in the eleventh grade because they align perfectly with my fascination for computer science."
+    interests:
+      title: "Interests"
+      content: "Apart from computer science, I enjoy solving mathematical problems, and in life, I love playing the guitar, listening to rock, especially the band Green Day, drawing manga, and baking. However, the activity that takes up most of my time is coding."
+    travels:
+      title: "Travels"
+      content: "I also love traveling. So far, I've only explored Europe, visiting Spain, England, Germany, Italy, the Netherlands, and soon Poland. However, I would also like to discover more distant cities like New York, Tokyo, or Seoul."
+    goals:
+      title: "Goals"
+      content: "In life, I aspire to become a game developer or software engineer. I am aiming for a preparatory class for prestigious engineering schools in the MP2I track to subsequently enroll in an engineering school specializing in computer science."
+    passion:
+      title: "My greatest Passion"
+      content: "Computer science, particularly coding, remains my greatest passion. I've had the opportunity to explore it in group settings through events such as \"La Nuit Du Code\", where we created a game in a few hours, as well as with \"Pass Ton Hack D'abord\", a national high school-level cybersecurity competition."
+menu:
+  menu: "Menu"
+  mainTheme: "Main Theme"
+  secondaryTheme: "Secondary Theme"
+  about:
+    title: "About"
+    description: "Find out more about me !"
+  tools:
+    title: "Tools and languages"
+    description: "Learn more about the languages and tools I use !"
+  projects:
+    title: "Realised projects"
+    description: "Discover the projects I carried out !"
+  services:
+    title: "Services"
+    description: "Browse the services I offer !"
+  login:
+    title: "Sign in or Sign up"
+    description: "Log into your account or create a new one !"
+tools:
+  title: "Tools & Languages"
+  subtitle: "Explore tools that I'm using !"
+  close: "Close"
+  tool:
+    java:
+      title: "Java"
+      content: "Java is the programming language I master the most. I started with Java in 2021 by creating mods and plugins for the Minecraft game.<br/>With Java, I can now create desktop applications, Discord bots, or web-scraping bots, as well as any code allowing me to automate certain tasks that I need to perform.<br/>Recently, I also took a Java course on the Udemy platform and a course on the Hibernate ORM framework to deepen my knowledge."
+    js:
+      title: "JavaScript"
+      content: "JavaScript is a language I regularly use in web development.<br/>It allows me to animate my websites like the background of this portfolio and make them dynamic.<br/>I mainly discovered this language by drawing on my experience with other languages, but I also took a course on the Udemy platform."
+    c++:
+      title: "C++"
+      content: "C++ is the first real programming language I discovered.<br/>It allowed me to learn the basics, concepts such as object-oriented programming, but also its peculiarities like pointers.<br/>In this language, I only know the \"basics\" learned with the OpenClassroom platform. However, thanks to them, as well as to the complexity of the language, I was able to easily reuse these skills to quickly learn other languages without formal training."
+    python:
+      title: "Python"
+      content: "Although I had heard of Python in the fields of artificial intelligence and video games, I only started using it in my first year of high school due to the requirements of the Digital and Computer Science specialty.<br/>This allowed me to discover a new way of coding, with more freedom and less formality compared to the other languages I use more regularly."
+    dart:
+      title: "Dart"
+      content: "Dart is a language I recently discovered in my research on mobile applications.<br/>Indeed, I mainly use it to create mobile applications and, for the same purpose, to fetch data online."
+    php:
+      title: "PHP"
+      content: "PHP is the language I use to manage the backend of my websites.<br/>Indeed, I use it in my web-related projects or to create user interfaces in a simple way.<br/>Although I haven't often had the opportunity to work directly with pure PHP, I often use it with frameworks such as Symfony."
+    flutter:
+      title: "Flutter"
+      content: "Flutter, this kit created by Google, is currently the best alternative I have found for developing mobile applications compatible with both Android and iOS.<br/>I have used it mainly to create utility applications, often for my personal use, and I have not yet explored much of the graphical possibilities it offers."
+    android_studio:
+      title: "Android Studio"
+      content: "Android Studio is the first software I used to try to create mobile applications in Java.<br/>However, I quickly encountered problems for which there was no solution that suited me, such as the inability to create cross-platform applications.<br/>As a result, I turned to Flutter after much research and comparison."
+    jetbrains:
+      title: "JetBrains"
+      content: "JetBrains is the company that develops the software I prefer to use.<br/>Indeed, I discovered JetBrains products with IntelliJ IDEA with the aim of coding in Java and I quickly became attached to the simplicity and possibilities offered by this range of products.<br/>Moreover, with my student status, I was able to benefit from the premium versions of these software and even more appreciated their features such as the possibility of coding with multiple people simultaneously."
+    mysql:
+      title: "MySQL"
+      content: "MySQL is the language I use in all my projects that require data storage.<br/>Indeed, I find databases very convenient for managing the data of my applications and games.<br/>Furthermore, it is very widespread, which allows me to make several projects compatible to use the same database quickly."
+    ubuntu:
+      title: "Ubuntu"
+      content: "Ubuntu is the Linux distribution I use to run my VPS.<br/>It allows me, with the tools it provides and those created by the community, to easily manage all my projects that need to be hosted or run bots continuously."
+    blender:
+      title: "Blender"
+      content: "Blender is the tool I use to create my 3D models.<br/>I have recently wanted to start creating small 3D video games, which led me to discover Blender to create my own models.<br/>Currently, I am still exploring and learning by doing my own experiments in modeling."
+    git:
+      title: "Git"
+      content: "Like many developers, I use Git and Github to manage my projects.<br/>This allows me to easily transfer my projects from one machine to another, to back them up securely, to share them with other development enthusiasts, or to keep track of my modifications, which can be useful if I delete an element that I will need in another project later on."
+    symfony:
+      title: "Symfony"
+      content: "Symfony is the framework I use in most of my web projects.<br/>I discovered it with a course on the Udemy platform to learn how to create e-commerce sites.<br/>With its set of extensions and integrated tools, it allows me to quickly create large projects while keeping a clean and clearly defined structure."
+    laravel:
+      title: "Laravel"
+      content: "Laravel is the first PHP framework I discovered.<br/>I first tried to explore and use it but quickly realized its complexity and the lack of time, so I turned to other solutions before discovering Symfony, which is the framework I use today."
+    spigot:
+      title: "Spigot"
+      content: "Spigot is an API based on Bukkit for creating online Minecraft servers.<br/>It is with this API that I was able to develop my first Minecraft plugins in Java, and that I was able to discover the language to create increasingly complex features."
+    forge:
+      title: "Minecraft Forge"
+      content: "Forge is an API for creating mods for the Minecraft game.<br/>My first experiments in Java started with Forge, which is why I decided to learn programming with Java.<br/>In the end, I didn't use it for long and quickly turned to Spigot, which, in my opinion, allows me to create content accessible to the largest number of people and to try to push the limits of the game and my creativity without directly modifying it."
+    postman:
+      title: "Postman"
+      content: "Postman is the tool I use to test my APIs or explore existing APIs.<br/>Indeed, when I develop an API solution to learn how to structure my data and their access or to use it in a separate application, I test it throughout the creation phase with Postman.<br/>I also use Postman when I want to create a tool to collect data, or when I want to find the right request to automate tasks and create bots."
+    tailwind:
+      title: "Tailwind CSS"
+      content: "Tailwind is the CSS framework I try to use the most.<br/>Indeed, I found myself attracted to this tool because of its efficiency and the range of possibilities it offers, which would allow me to no longer use CSS.<br/>Personally, I find that it allows to find a balance between clear code and quick and practical styling."
+    html:
+      title: "HTML 5"
+      content: "HTML is the first language I discovered when I was 9 years old. It allowed me to discover the satisfaction of achieving a goal in code and to dive into the world of software development."
+    css:
+      title: "CSS 3"
+      content: "Just like HTML, CSS is one of the first languages I discovered. It allowed me to discover the satisfaction of achieving a goal in code and to dive into the world of software development."
+    udemy:
+      title: "Udemy"
+      content: "Udemy is the online course platform I use to follow courses and get additional support in addition to community servers.<br/>I had the opportunity to follow several courses in Java, JavaScript, PHP, for Blender, or for Unreal Engine."
+    sass:
+      title: "Sass"
+      content: "Sass or Scss is a tool I really enjoy using because despite the compilation constraints, it allows me to structure my style, which I greatly appreciate."
+    stripe:
+      title: "Stripe"
+      content: "Stripe is the payment tool I use in my projects requiring payments such as my e-commerce sites.<br/>I find it particularly interesting for its service-to-price ratio, which allows me to have a large number of tools as well as a price appropriate for projects that have not yet gained significant traction."
+    unreal_engine:
+      title: "Unreal Engine 5"
+      content: "I want to learn how to create video games and after extensive research and comparisons, I chose Unreal Engine as my game engine.<br/>I followed a course to create games under Unreal Engine using Blueprint and I will soon start a new course to create games in C++."
+projects:
+  title: "My Projects"
+  subtitle: "Discover projects I was able to do !"
+services:
+  soon: "Comming Soon..."

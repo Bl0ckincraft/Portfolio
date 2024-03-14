@@ -1,0 +1,101 @@
+<header class="{% if flyingHeader is defined %}flying-header{% endif %}">
+    <div class="container flex flex-row mx-auto items-center">
+        <a class="flex flex-row items-center p-1 rounded-2xl title-part darker-hover pe-2" href="{{ path('app_home') }}">
+            <img class="icon" alt="logo" src="{{ asset("images/icon.png") }}"/>
+            <span class="text-xl sm:text-2xl mx-2 font-semibold uppercase">John Doe</span>
+        </a>
+        <div class="menu-switch flex flex-row items-center ms-auto rounded-2xl darker-hover interact-part">
+            <i class=" fa-solid fa-bars text-3xl p-4"></i>
+        </div>
+    </div>
+    <div id="menu">
+        <div id="menu-content" class="p-4 overflow-y-scroll">
+            <div class="menu-switch rounded-2xl p-3 darker-hover top-part flex flex-row items-center">
+                <img class="icon" alt="logo" src="{{ asset("images/icon.png") }}"/>
+                <div class="mx-auto">
+                    <span class="text-2xl uppercase font-bold">{{ "menu.menu"|trans }}</span>
+                </div>
+                <div>
+                    <i class="text-3xl fa-solid fa-xmark p-4"></i>
+                </div>
+            </div>
+
+            <hr class="my-4"/>
+
+            <div class="nav-items-part mb-auto pt-4 mx-3 flex flex-col gap-5">
+                <a href="{{ path('app_home') }}#about-section" class="nav-item p-4 rounded-lg flex flex-col gap-1 mx-auto">
+                    <div class="nav-title-container text-lg font-bold">
+                        <span class="nav-title"><i class="fa-solid fa-circle-info pe-2"></i>{{ "menu.about.title"|trans }}</span>
+                    </div>
+                    <div class="nav-description-container text-base">
+                        <span class="nav-description">{{ "menu.about.description"|trans }}</span>
+                    </div>
+                </a>
+                <a href="{{ path('app_tools') }}" class="nav-item p-4 rounded-lg flex flex-col gap-1 mx-auto">
+                    <div class="nav-title-container text-lg font-bold">
+                        <span class="nav-title"><i class="fa-solid fa-screwdriver-wrench pe-2"></i>{{ "menu.tools.title"|trans }}</span>
+                    </div>
+                    <div class="nav-description-container text-base">
+                        <span class="nav-description">{{ "menu.tools.description"|trans }}</span>
+                    </div>
+                </a>
+                <a href="{{ path('app_projects') }}" class="nav-item p-4 rounded-lg flex flex-col gap-1 mx-auto">
+                    <div class="nav-title-container text-lg font-bold">
+                        <span class="nav-title"><i class="fa-solid fa-book pe-2"></i>{{ "menu.projects.title"|trans }}</span>
+                    </div>
+                    <div class="nav-description-container text-base">
+                        <span class="nav-description">{{ "menu.projects.description"|trans }}</span>
+                    </div>
+                </a>
+                <a href="{{ path('app_services') }}" class="nav-item p-4 rounded-lg flex flex-col gap-1 mx-auto">
+                    <div class="nav-title-container text-lg font-bold">
+                        <span class="nav-title"><i class="fa-solid fa-tags pe-2"></i>{{ "menu.services.title"|trans }}</span>
+                    </div>
+                    <div class="nav-description-container text-base">
+                        <span class="nav-description">{{ "menu.services.description"|trans }}</span>
+                    </div>
+                </a>
+                {#
+                <a href="{{ path('app_login') }}" class="nav-item p-4 rounded-lg flex flex-col gap-1 mx-auto">
+                    <div class="nav-title-container text-lg font-bold">
+                        <span class="nav-title"><i class="fa-solid fa-tags pe-2"></i>{{ "menu.login.title"|trans }}</span>
+                    </div>
+                    <div class="nav-description-container text-base">
+                        <span class="nav-description">{{ "menu.login.description"|trans }}</span>
+                    </div>
+                </a>
+                #}
+            </div>
+
+            <hr class="my-4"/>
+
+            <div class="theme-manager-part flex flex-col">
+                <div class="mx-auto">
+                    <span class="text-center text-base font-bold uppercase">{{ "menu.mainTheme"|trans }}</span>
+                </div>
+                <div class="main-theme-settings">
+                    <div class="main-theme-color dark-theme" data-color="dark">
+                    </div>
+                    <div class="main-theme-color light-theme" data-color="light">
+                    </div>
+                </div>
+                <div class="mx-auto mt-1">
+                    <span class="text-center text-base font-bold uppercase">{{ "menu.secondaryTheme"|trans }}</span>
+                </div>
+                <div class="accent-theme-settings">
+                    <div class="accent-theme-color pink-accent-theme" data-color="pink">
+                    </div>
+                    <div class="accent-theme-color yellow-accent-theme" data-color="yellow">
+                    </div>
+                    <div class="accent-theme-color blue-accent-theme" data-color="blue">
+                    </div>
+                    <div class="accent-theme-color green-accent-theme" data-color="green">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu-modal">
+
+        </div>
+    </div>
+</header>

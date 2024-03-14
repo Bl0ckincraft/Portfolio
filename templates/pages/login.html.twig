@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% include 'partials/header.html.twig' %}
+
+    <div class="w-full h-full flex items-center justify-center grow">
+        <div class="m-5 max-w-[800px] w-full p-5 rounded">
+            {{ form(signInForm) }}
+        </div>
+    </div>
+    {{ dump(signInForm, signUpForm) }}
+
+    {% include 'partials/footer.html.twig' %}
+{% endblock %}

@@ -1,0 +1,262 @@
+#home {
+  @keyframes floating {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .self-picture {
+    z-index: -3;
+    position: absolute;
+    max-height: calc(100vh - 140px);
+    max-width: min(700px, 100vw);
+    height: 100vh;
+    object-fit: contain;
+    right: 0;
+    bottom: 0;
+    aspect-ratio: 163/200;
+    animation: floating 5s ease-in-out infinite;
+  }
+
+  .firstname, .lastname, .state {
+    text-transform: uppercase;
+    font-family: var(--albas-font);
+    text-shadow: 0 0 15px var(--accent-color), 0 0 20px var(--accent-color);
+    transition: ease-in-out font-size .5s;
+  }
+
+  .firstname::before, .lastname::before, .state::before {
+    content: attr(content);
+    position: absolute;
+    font-family: var(--albas-filled-font);
+    color: rgba(var(--accent-color-rgb), 0.6);
+    z-index: -1;
+  }
+
+  .firstname {
+    font-size: 150px;
+    line-height: 160px;
+  }
+
+  .lastname {
+    font-size: 60px;
+  }
+
+  .state {
+    font-size: 20px;
+  }
+
+  @media (max-width: 750px) {
+    .firstname {
+      font-size: 110px;
+      line-height: 130px;
+    }
+
+    .lastname {
+      font-size: 45px;
+    }
+
+    .state {
+      font-size: 18px;
+    }
+  }
+
+  .wave-wrapper {
+    height: var(--wave-height);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: calc(-1 * var(--wave-height));
+    overflow-x: hidden;
+    z-index: -10;
+  }
+
+  .wave-wrapper.rotate-180 {
+    top: 0;
+  }
+
+  .wave {
+    background-color: var(--wave-color);
+    position: absolute;
+    width: calc(200vw + var(--wave-width));
+    height: 100%;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23000000'/%3E%3C/svg%3E")
+  }
+
+  .wave:nth-of-type(2) {
+    bottom: 0;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.5;
+  }
+
+  .wave:nth-of-type(3) {
+    bottom: 0;
+    animation: wave 20s -1s linear infinite;
+    opacity: 0.5;
+  }
+
+  @keyframes wave {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(var(--wave-translate-x));}
+  }
+
+  .about-title-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .about-title-container span::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.75rem;
+    background-color: rgba(var(--accent-color-rgb), .8);
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  .card-container:nth-child(1) {
+    .card__bg, .card__face::before, .card__face::after {
+      background-color: var(--useful-color-yellow);
+    }
+  }
+
+  .card-container:nth-child(2) {
+    .card__bg, .card__face::before, .card__face::after {
+      background-color: var(--useful-color-green);
+    }
+  }
+  .card-container:nth-child(3) {
+    .card__bg, .card__face::before, .card__face::after {
+      background-color: var(--useful-color-blue);
+    }
+  }
+  .card-container:nth-child(4) {
+    .card__bg, .card__face::before, .card__face::after {
+      background-color: var(--useful-color-purple);
+    }
+  }
+  .card-container:nth-child(5) {
+    .card__bg, .card__face::before, .card__face::after {
+      background-color: var(--useful-color-pink);
+    }
+  }
+  .card-container:nth-child(6) {
+    .card__bg, .card__face::before, .card__face::after {
+      background-color: var(--useful-color-red);
+    }
+  }
+
+  .card {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    transform-style: preserve-3d;
+    border-radius: 15px;
+
+    @media (max-width: 450px) {
+      height: 350px;
+    }
+
+    * {
+      border-radius: 15px;
+    }
+
+    &.flipped {
+      transform: rotateY(0.5turn);
+    }
+
+    &.flipped .card__face--back, &:not(.flipped) .card__face--front {
+      box-shadow: 15px 15px 10px rgba(0, 0, 0, var(--shadow-opacity));
+    }
+
+    .card__face {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      transition: 1s ease-in-out;
+      z-index: 1;
+
+      .card__default-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--main-color);
+        z-index: 2;
+      }
+
+      .card__bg-container {
+        position: absolute;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        z-index: 3;
+      }
+
+      &--back {
+        transform: rotateY(0.5turn);
+
+        &::before, &::after {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          content: "";
+          border-radius: 15px;
+          transform: rotateZ(0);
+          transition: ease-in-out transform .5s;
+          filter: opacity(.6) brightness(1.2);
+        }
+      }
+
+      .card__text {
+        z-index: 4;
+        position: relative;
+      }
+    }
+
+    .card__bg {
+      height: 128px;
+      width: 128px;
+
+      position: absolute;
+      top: -75px;
+      right: -75px;
+
+      border-radius: 50%;
+      transition: ease-in-out transform .5s;
+    }
+
+    &:hover {
+      .card__bg {
+        transform: scale(10);
+      }
+
+      .card__face--back::before {
+        transform: rotateZ(-3deg);
+      }
+
+      .card__face--back::after {
+        transform: rotateZ(3deg);
+      }
+    }
+  }
+}

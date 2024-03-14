@@ -1,0 +1,57 @@
+#services {
+  .title {
+    text-transform: uppercase;
+    font-family: var(--albas-font);
+    text-shadow: 0 0 15px var(--accent-color), 0 0 20px var(--accent-color);
+    transition: ease-in-out font-size .5s;
+    font-size: 48px;
+    line-height: 70px;
+  }
+
+  .title::before {
+    content: attr(content);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-family: var(--albas-filled-font);
+    color: rgba(var(--accent-color-rgb), 0.6);
+    z-index: -1;
+  }
+
+  @media (min-width: 640px){
+    .title {
+      font-size: 55px;
+      line-height: 70px;
+    }
+  }
+
+  @media (min-width: 768px){
+    .title {
+      font-size: 67px;
+      line-height: 80px;
+    }
+  }
+
+  @media (min-width: 1024px){
+    .title {
+      font-size: 80px;
+      line-height: 100px;
+    }
+  }
+
+  @media (min-width: 1280px){
+    .title {
+      font-size: 100px;
+      line-height: 130px;
+    }
+  }
+
+  @media (min-width: 1536px){
+    .title {
+      font-size: 130px;
+      line-height: 160px;
+    }
+  }
+}

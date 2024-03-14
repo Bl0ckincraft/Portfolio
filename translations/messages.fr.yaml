@@ -1,0 +1,254 @@
+loading: "Chargement..."
+welcome: "Accueil"
+parcoursup:
+  welcome: "Bienvenue !"
+  content: "Bonjour, je vous remercie de passer voir mon portfolio que j'ai anonymiser pour l'occasion.<br/>Pour une meilleure expérience, je peux vous conseiller de le visionner sur un ordinateur et de naviguer en utilisant le menu en haut à droite.<br/>Je vous souhaite une bonne visite!"
+  close: "Fermer"
+home:
+  state: "Passionné par le développement"
+  aboutTitle: "À Propos De Moi"
+  about:
+    me:
+      title: "Qui suis-je"
+      content: "Bonjour, moi c'est John, un jeune étudiant de x ans. Ma passion c'est l'informatique mais surtout le développement de part son aspect créatif et emplie de possibilité qui rend chaque projet enrichissant techniquement. J'ai découvert le code à l'âge de 9 ans, et réellement commencé à coder à 13 ans."
+    studies:
+      title: "Études"
+      content: "Je suis actuellement en terminale en filière générale. J'ai choisi les spécialités Mathématiques, Numérique & Sciences Informatiques, et Physique-Chimie en classe de Première car elles correspondent totalement à ma fascination pour l'informatique."
+    interests:
+      title: "Centres d'intérêts"
+      content: "Mis à part l'informatique, j'aime résoudre des problèmes mathématiques, et dans la vie, j'adore jouer de la guitare, écouter du rock, en particulier le groupe Green Day, dessiner des mangas et faire de la pâtisserie. Cependant, l'occupation qui occupe la plupart de mon temps est le codage."
+    travels:
+      title: "Voyages"
+      content: "J'aime aussi beaucoup voyager. Pour l'instant, j'ai exploré uniquement l'Europe, visitant l'Espagne, l'Angleterre, l'Allemagne, l'Italie, les Pays-Bas, et bientôt la Pologne. Cependant, j'aimerais également découvrir des villes plus éloignées comme New York, Tokyo ou Séoul."
+    goals:
+      title: "Objectifs"
+      content: "Dans la vie, j'aspire à devenir développeur dans le jeu vidéo ou ingénieur logiciel. Je vise une classe préparatoire aux grandes écoles en filière MP2I afin d'intégrer par la suite une école d'ingénieur dans le domaine de l'informatique."
+    passion:
+      title: "Ma plus grande Passion"
+      content: "L'informatique, et particulièrement le codage, demeure ma plus grande passion. J'ai eu l'opportunité de l'explorer en groupe à travers des événements tels que \"La Nuit Du Code\", où nous avons créé un jeu en quelques heures, ainsi qu'avec \"Pass Ton Hack D'abord\", un concours national de cybersécurité au niveau lycée."
+menu:
+  menu: "Menu"
+  mainTheme: "Thème Principale"
+  secondaryTheme: "Thème Secondaire"
+  about:
+    title: "À propos"
+    description: "En connaître plus sur moi !"
+  tools:
+    title: "Outils et langages"
+    description: "En savoir plus les langages et outils que j'utilise !"
+  projects:
+    title: "Projets réalisés"
+    description: "Découvrir les projets que j'ai développés !"
+  services:
+    title: "Services"
+    description: "Parcourir les services que je propose !"
+tools:
+  title: "Outils & Langages"
+  subtitle: "Explorer les outils que j'utilise !"
+  close: "Fermer"
+  tool:
+    java:
+      title: "Java"
+      content: "Java est le langage de programmation que je maîtrise le mieux. J'ai débuté avec Java en 2021 en créant des mods et des plugins pour le jeu Minecraft.<br/>Avec Java, je sais aujourd'hui créer des applications de bureau, des bots Discord ou des bots naviguant sur le web ainsi que tout code me permettant d'automatiser certaines tâches que je dois réaliser.<br/>Récemment, j'ai également suivi une formation Java sur la plateforme Udemy et une formation portant sur le framework ORM Hibernate afin d'approfondir mes connaissances."
+    js:
+      title: "JavaScript"
+      content: "JavaScript est un langage que j'utilise régulièrement dans la conception de sites web.<br/>Il me permet d'animer mes sites web comme le fond de ce portfolio et de rendre mes sites dynamiques.<br/>J'ai principalement découvert ce langage en m'inspirant de mon expérience dans d'autres langages mais j'ai également suivi une formation sur la plateforme Udemy."
+    c++:
+      title: "C++"
+      content: "C++ est le premier véritable langage de programmation que j'ai découvert.<br/>Il m'a permis de découvrir les fondamentaux, des concepts tels que la programmation orientée objet mais aussi ses particularités comme les pointeurs.<br/>Dans ce langage, je ne connais que les \"bases\" apprises avec la plateforme OpenClassroom. Cependant, grâce à elles, ainsi qu'à la complexité du langage, j'ai pu facilement réutiliser ces compétences pour apprendre rapidement et sans formation d'autres langages."
+    python:
+      title: "Python"
+      content: "Bien que j'aie entendu parler de Python dans le domaine de l'intelligence artificielle et du jeu vidéo, je n'ai commencé à l'utiliser qu'en classe de Première suite aux exigences de la spécialité Numérique et Sciences Informatiques.<br/>J'ai ainsi pu découvrir une nouvelle manière de coder, avec plus de liberté et moins de forme comparé aux autres langages que j'utilise plus régulièrement."
+    dart:
+      title: "Dart"
+      content: "Dart est un langage que j'ai récemment découvert au cours de mes recherches sur les applications mobiles.<br/>En effet, je l'utilise principalement pour créer des applications mobiles et dans le même objectif, pour récupérer des données en ligne."
+    php:
+      title: "PHP"
+      content: "PHP est le langage que j'utilise pour gérer le backend de mes sites web.<br/>En effet, je l'utilise dans mes projets en lien avec le web ou pour créer des interfaces utilisateurs de manière simple.<br/>Bien que je n'aie pas souvent eu l'occasion de travailler directement avec PHP en pur, je l'utilise souvent avec des frameworks tels que Symfony."
+    flutter:
+      title: "Flutter"
+      content: "Flutter, ce kit créé par Google est pour l'instant, la meilleure alternative que j'ai trouvée pour développer des applications mobiles compatibles entre Android et iOS.<br/>Je l'ai notamment utilisé pour créer des applications utilitaires, souvent pour mon usage personnel et je n'ai pas encore beaucoup exploré les possibilités graphiques qu'il offre."
+    android_studio:
+      title: "Android Studio"
+      content: "Android Studio est le premier logiciel que j'ai utilisé pour tenter de créer des applications mobiles en Java.<br/>Cependant, je me suis vite heurté à des problèmes qui ne possèdent pas de solution qui me convienne comme l'impossibilité de créer des applications multiplateforme.<br/>De ce fait, je me suis tourné vers Flutter après de nombreuses recherches et comparaisons."
+    jetbrains:
+      title: "JetBrains"
+      content: "JetBrains est la société qui développe les logiciels que je préfère utiliser.<br/>En effet, j'ai découvert les produits JetBrains avec IntelliJ IDEA dans l'optique de coder en Java et je me suis vite attaché à la simplicité et aux possibilités qu'offre cette gamme de produits.<br/>De plus, avec mon statut d'étudiant, j'ai pu bénéficier des versions premium de ces logiciels et d'autant plus apprécié leurs fonctionnalités comme la possibilité de coder à plusieurs en simultané."
+    mysql:
+      title: "MySQL"
+      content: "MySQL est le langage que j'utilise dans tous mes projets qui nécessitent de stocker des données.<br/>En effet, je trouve que les bases de données sont très pratiques pour gérer les données de mes applications et de mes jeux.<br/>De plus, il est très répandu, ce qui me permet de rendre plusieurs projets compatibles pour utiliser la même base de données rapidement."
+    ubuntu:
+      title: "Ubuntu"
+      content: "Ubuntu est la distribution de Linux que j'utilise pour faire fonctionner mes VPS.<br/>Elle me permet avec les outils dont elles disposent et ceux qui ont été créés par la communauté, de facilement gérer l'ensemble de mes projets qui nécessitent d'être hébergés ou de faire fonctionner des bots en continu."
+    blender:
+      title: "Blender"
+      content: "Blender est l'outil que j'utilise pour créer mes modèles 3D.<br/>Je souhaite depuis peu commencer à créer des petits jeux vidéos en 3D ce qui m'a poussé à découvrir Blender pour créer mes propres modèles.<br/>Actuellement, je suis toujours en train d'explorer et d'apprendre en faisant mes propres expérimentations dans la modélisation."
+    git:
+      title: "Git"
+      content: "Comme beaucoup de développeurs, j'utilise Git et Github pour gérer mes projets.<br/>Cela me permet de facilement transférer mes projets d'une machine à une autre, de les sauvegarder de manière sûre, de les partager à d'autres fans de développement ou encore de garder des historiques de mes modifications, ce qui peut m'être utile si je supprime un élément dont j'aurai besoin dans un autre projet plus tard."
+    symfony:
+      title: "Symfony"
+      content: "Symfony est le framework que j'utilise dans la plupart de mes projets web.<br/>Je l'ai découvert avec une formation de la plateforme Udemy pour apprendre à faire des sites e-commerce.<br/>Avec son ensemble d'extensions et d'outils intégrés, il me permet de créer rapidement des projets volumineux tout en gardant une structure propre et clairement définie."
+    laravel:
+      title: "Laravel"
+      content: "Laravel est le premier framework PHP que j'ai découvert.<br/>J'ai d'abord essayé de l'explorer et l'utiliser mais je me suis vite rendu compte de sa complexité et du temps qui me manquait, je me suis alors tourné vers d'autres solutions avant de découvrir Symfony qui est le framework que j'utilise aujourd'hui."
+    spigot:
+      title: "Spigot"
+      content: "Spigot est une API basée sur Bukkit pour créer des serveurs Minecraft en ligne.<br/>C'est avec cette API que j'ai pu développer mes premiers plugins Minecraft en Java, et que j'ai pu découvrir le langage pour arriver à créer des fonctionnalités de plus en plus complexes."
+    forge:
+      title: "Minecraft Forge"
+      content: "Forge est une API permettant de créer des mods pour le jeu Minecraft.<br/>Mes premières expérimentations en Java ont commencé avec Forge, c'est dans ce but que j'ai décidé d'apprendre la programmation avec Java.<br/>Finalement, je ne l'ai pas utilisé longtemps et je me suis rapidement tourné vers Spigot, qui, d'après moi, me permet de créer du contenu accessible au plus grand nombre et d'essayer de repousser les limites du jeu et de ma créativité sans le modifier directement."
+    postman:
+      title: "Postman"
+      content: "Postman est l'outil que j'utilise pour tester mes API ou explorer des APIs existantes.<br/>En effet, lorsque je développe une solution API pour apprendre à structurer mes données et leurs accès ou pour l'utiliser dans une application à part, je la teste durant toute la phase de création avec Postman.<br/>J'utilise également Postman lorsque je veux créer un outil permettant de récolter des données, ou lorsque je souhaite trouver la bonne requête pour automatiser des tâches et créer des bots."
+    tailwind:
+      title: "Tailwind CSS"
+      content: "Tailwind est le framework CSS que j'essaie d'utiliser le plus.<br/>En effet, je me suis trouvé attiré par cet outil de par son efficacité et l'ensemble de possibilités qu'il offre et qui me permettraient de ne plus utiliser de CSS.<br/>À titre personnel, je trouve qu'il permet de trouver l'équilibre entre un code clair et une mise en place de style rapide et pratique."
+    html:
+      title: "HTML 5"
+      content: "HTML est le premier langage que j'ai découvert alors âgé de 9 ans. Il m'a permis de découvrir la satisfaction de la réussite d'un objectif en code et de plonger dans le monde du développement informatique."
+    css:
+      title: "CSS 3"
+      content: "Tout comme le HTML, le CSS est l'un des premiers langages que j'ai découverts. Il m'a permis de découvrir la satisfaction de la réussite d'un objectif en code et de plonger dans le monde du développement informatique."
+    udemy:
+      title: "Udemy"
+      content: "Udemy est la plateforme de cours en ligne que j'utilise pour suivre des formations et disposer d'un accompagnement en plus des serveurs communautaires.<br/>J'ai eu l'occasion de suivre plusieurs formations en Java, JavaScript, PHP, pour Blender ou encore pour Unreal Engine."
+    sass:
+      title: "Sass"
+      content: "Le Sass ou Scss est un outil que j'aime beaucoup utiliser car malgré les contraintes de compilations, il me permet de structurer mon style, ce que j'apprécie énormément."
+    stripe:
+      title: "Stripe"
+      content: "Stripe est l'outil de paiement que j'utilise dans mes projets nécessitant des paiements tels que mes sites e-commerce.<br/>Je le trouve particulièrement intéressant pour son rapport services et tarifs, qui permettent d'avoir un grand nombre d'outils ainsi qu'un tarif approprié à des projets qui n'ont pas encore pris une grande ampleur."
+    unreal_engine:
+      title: "Unreal Engine 5"
+      content: "Je souhaite apprendre à créer des jeux vidéo et après de longues recherches et comparaisons, j'ai choisi Unreal Engine comme moteur de jeu.<br/>J'ai suivi une formation pour créer des jeux sous Unreal Engine en Blueprint et je vais prochainement débuter une nouvelle formation pour créer des jeux en C++."
+projects:
+  title: "Mes Projets"
+  subtitle: "Découvrir les projets que j'ai pu réaliser !"
+  tags:
+    java:
+      name: "Java"
+      color: "#4275f5"
+    web:
+      name: "Web"
+      color: "#f54242"
+    api:
+      name: "API"
+      color: "#b942f5"
+    desktop_application:
+      name: "Desktop App"
+      color: "#42f5ce"
+    modding:
+      name: "Modding"
+      color: "#42f55a"
+    plugin:
+      name: "Plugin"
+      color: "#f542ef"
+    python:
+      name: "Python"
+      color: "#f5ec42"
+    mobile_application:
+      name: "Mobile App"
+      color: "#f5a142"
+    dart:
+      name: "Dart"
+      color: "#6342f5"
+    flutter:
+      name: "Flutter"
+      color: "#42f590"
+    website:
+      name: "Site Web"
+      color: "#f54287"
+    php:
+      name: "PHP"
+      color: "#a4f542"
+    symfony:
+      name: "Symfony"
+      color: "#42f5a7"
+    minecraft:
+      name: "Minecraft"
+      color: "#f57842"
+    shop:
+      name: "Boutique"
+      color: "#f5e342"
+    automating:
+      name: "Automatisation"
+      color: "#427ef5"
+    discord_bot:
+      name: "Bot Discord"
+      color: "#7542f5"
+    game:
+      name: "Jeu"
+      color: "#45f542"
+    "3d":
+      name: "Modélisation 3D"
+      color: "#f56c42"
+    c++:
+      name: "C++"
+      color: "#42f5d1"
+    unreal_engine:
+      name: "Unreal Engine"
+      color: "#d742f5"
+    planed:
+      name: "À venir"
+      color: "#42f56f"
+    unrealised:
+      name: "Non Réalisée"
+      color: "var(--text-color)"
+  project:
+    spotify_overlay:
+      title: "Spotify Overlay"
+      desc: "Spotify Overlay est une application de bureau.<br/>Cette application permet d'afficher les paroles d'une musique en cours de lecture depuis spotify sous la forme d'un overlay."
+    block_learning:
+      title: "Block Learning"
+      desc: ""
+    portfolio:
+      title: "Portfolio - John Doe"
+      desc: ""
+    portfolio_matthieu:
+      title: "Portfolio - Matthieu Darmigny"
+      desc: ""
+    angel_x_devil:
+      title: "Angel X Devil"
+      desc: ""
+    kingdoms_plugin:
+      title: "Kingdoms - Plugin"
+      desc: ""
+    kingdoms_app:
+      title: "Kingdoms - App"
+      desc: ""
+    faylisia_plugin:
+      title: "Faylisia - Plugin"
+      desc: ""
+    our_little_world:
+      title: "Our Little World"
+      desc: ""
+    auto_vote_hyping:
+      title: "Auto Vote Hyping"
+      desc: ""
+    l_systems:
+      title: "L-Systems"
+      desc: ""
+    extracteur_article_pdf:
+      title: "Extracteur d'article"
+      desc: ""
+    faylisia_launcher:
+      title: "Faylisia - Launcher"
+      desc: ""
+    minexplore_tracker:
+      title: "MineXplore Tracker"
+      desc: ""
+    minexplore_addons:
+      title: "MineXplore Addons"
+      desc: ""
+    spotify_history_reader:
+      title: "Streaming History Reader"
+      desc: ""
+    mhysb:
+      title: "More Hypixel SkyBlock"
+      desc: ""
+    infoclass:
+      title: "InfoClass"
+      desc: ""
+services:
+  soon: "Prochainement..."

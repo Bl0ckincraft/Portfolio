@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+@import "theme.scss";
+@import "loader.scss";
+@import "header.scss";
+@import "background.scss";
+@import "home.scss";
+@import "footer.scss";
+@import "tools.scss";
+@import "services.scss";
+@import "projects.scss";
+
+@font-face {
+    font-family: 'Albas';
+    src: url("../fonts/ALBAS.TTF");
+}
+
+@font-face {
+    font-family: 'Albas Filled';
+    src: url("../fonts/ALBAS_FILLED.TTF");
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: rgba(255, 255, 255, 0.075);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.075);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    background-color: var(--main-color);
+    color: var(--text-color);
+    user-select: none;
+}
+
+.darker-hover {
+    transition: ease-in-out background-color .3s;
+}
+
+.darker-hover:hover {
+    background-color: var(--darker-background);
+}
+
+hr {
+    border-color: var(--text-color);
+}
+
+.container {
+    transition: ease-in-out max-width .5s;
+}
+
+.scroll-indicator {
+    --scroll-indicator-size: 60px;
+    --scroll-indicator-color: var(--text-color);
+
+    position: absolute;
+    bottom: 50px;
+    left: calc(50% - var(--scroll-indicator-size) * .6 / 2);
+    width: calc(var(--scroll-indicator-size) * .6);
+    height: var(--scroll-indicator-size);
+    border-radius: 20px;
+    border: calc(var(--scroll-indicator-size) / 22) solid var(--scroll-indicator-color);
+}
+
+.scroll-indicator::before {
+    content: '';
+    position: absolute;
+    left: calc(50% - var(--scroll-indicator-size) / 20);
+    top: calc(var(--scroll-indicator-size) / 5);
+    height: calc(var(--scroll-indicator-size) / 10);
+    width: calc(var(--scroll-indicator-size) / 10);
+    background: var(--scroll-indicator-color);
+    border-radius: 50%;
+    animation: scroll 4s infinite;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(calc(var(--scroll-indicator-size, 0px) / 2));
+    }
+}
+
+#parcoursup-message {
+    background-color: rgba(var(--main-color-rgb), .7);
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    pointer-events: all;
+    z-index: 90;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    &.shown {
+        display: flex;
+    }
+
+    .parcoursup-message-content {
+        background-color: var(--main-color);
+        max-width: 400px;
+    }
+
+    #close-parcoursup-message {
+        background-color: var(--accent-color);
+        transition: background-color ease-in-out .3s;
+
+        &:hover {
+            background-color: var(--accent-color-variant);
+        }
+    }
+}

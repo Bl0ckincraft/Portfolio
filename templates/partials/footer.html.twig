@@ -1,0 +1,21 @@
+<footer class="{% if flyingFooter is defined %}flying-footer{% else %}mt-auto{% endif %}">
+    <div class="container flex flex-col md:flex-row-reverse gap-6 md:gap-3 mx-auto px-1 md:px-4">
+        <div class="flex flex-col h-auto mx-auto md:mx-0 md:ms-auto md:me-3">
+            <div class="footer-link w-min mb-3 mx-auto md:mx-0 after:mx-auto md:after:mx-0">
+                <a href="{{ path('app_home') }}#about-section" class="text-lg font-bold">{{ "menu.about.title"|trans }}</a>
+            </div>
+            <div class="footer-link w-min mb-3 mx-auto md:mx-0 after:mx-auto md:after:mx-0">
+                <a href="{{ path('app_tools') }}" class="text-lg font-bold">{{ "menu.tools.title"|trans }}</a>
+            </div>
+            <div class="footer-link w-min mb-3 mx-auto md:mx-0 after:mx-auto md:after:mx-0">
+                <a href="{{ path('app_projects') }}" class="text-lg font-bold">{{ "menu.projects.title"|trans }}</a>
+            </div>
+            <div class="footer-link w-min mb-3 mx-auto md:mx-0 after:mx-auto md:after:mx-0">
+                <a href="{{ path('app_services') }}" class="text-lg font-bold">{{ "menu.services.title"|trans }}</a>
+            </div>
+        </div>
+        <div class="flex flex-row items-center h-auto mx-auto md:mx-0">
+            <span class="md:text-lg copyright">Copyright © 2024 - John Doe</span>
+        </div>
+    </div>
+</footer>

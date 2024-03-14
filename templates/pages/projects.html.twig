@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ "menu.projects.title"|trans }}{% endblock %}
+
+{% block body %}
+    {% set flyingHeader = 'true' %}
+    {% include 'partials/header.html.twig' %}
+
+    <div id="projects">
+        <div class="min-h-screen flex justify-center items-center">
+            <div class="text-center p-4">
+                <div class="w-full relative">
+                    <span class="title" content="{{ "projects.title"|trans }}">{{ "projects.title"|trans }}</span>
+                </div>
+                <div class="w-full relative">
+                    <span class="subtitle italic">{{ "projects.subtitle"|trans }}</span>
+                </div>
+            </div>
+
+            <div class="scroll-indicator"></div>
+        </div>
+        <div class="tools-part relative min-h-screen">
+            <div class="wave-wrapper">
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+            </div>
+
+            <div class="container mx-auto w-full my-auto flex flex-wrap gap-7 justify-center px-4 py-10">
+                {% for project, data in projects %}
+                    <a href="#" class="cursor-pointer project-card rounded-xl w-full min-h-[600px] max-w-[400px] flex flex-col overflow-hidden">
+                        <div class="w-full h-[200px]">
+                            <img src="/images/projects/list/{{ project }}.png" class="w-full h-full object-cover"/>
+                        </div>
+                        <div class="w-full h-full flex flex-col p-3 md:p-5">
+                            <div class="mb-auto">
+                                <h1 class="text-xl font-bold">{{ ("projects.project." ~ project ~ ".title")|trans }}</h1>
+                                <div class="mt-2 text-justify">
+                                    <span class="text-lg">{{ ("projects.project." ~ project ~ ".desc")|trans|raw }}</span>
+                                </div>
+                            </div>
+                            <hr class="my-4"/>
+                            <div class="tags-container flex flex-wrap gap-3">
+                                {% for tag in data.tags %}
+                                    <div class="tag rounded-2xl px-2 py-1" style="border-color: {{ ("projects.tags." ~ tag ~ ".color")|trans }}; color: {{ ("projects.tags." ~ tag ~ ".color")|trans }}">{{ ("projects.tags." ~ tag ~ ".name")|trans }}</div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    {% include 'partials/footer.html.twig' %}
+{% endblock %}
