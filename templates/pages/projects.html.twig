@@ -30,7 +30,7 @@
                 {% for project, data in projects %}
                     <a href="#" class="cursor-pointer project-card rounded-xl w-full min-h-[600px] max-w-[400px] flex flex-col overflow-hidden">
                         <div class="w-full h-[200px]">
-                            <img src="/images/projects/list/{{ project }}.png" class="w-full h-full object-cover"/>
+                            <img src="/images/projects/list/{{ project }}.avif" class="w-full h-full object-cover" alt="{{ ("projects.project." ~ project ~ ".title")|trans }}"/>
                         </div>
                         <div class="w-full h-full flex flex-col p-3 md:p-5">
                             <div class="mb-auto">

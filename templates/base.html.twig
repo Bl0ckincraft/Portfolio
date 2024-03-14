@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ app.request.getLocale() }}">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="{{ "description"|trans }}">
         <title>John Doe | {% block title %}{% endblock %}</title>
-        <link rel="icon" href="{{ asset("images/icon.png") }}">
+        <link rel="icon" href="{{ asset("images/icon.avif") }}">
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}

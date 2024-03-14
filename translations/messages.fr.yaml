@@ -1,5 +1,6 @@
 loading: "Chargement..."
 welcome: "Accueil"
+description: ""
 parcoursup:
   welcome: "Bienvenue !"
   content: "Bonjour, je vous remercie de passer voir mon portfolio que j'ai anonymiser pour l'occasion.<br/>Pour une meilleure expérience, je peux vous conseiller de le visionner sur un ordinateur et de naviguer en utilisant le menu en haut à droite.<br/>Je vous souhaite une bonne visite!"

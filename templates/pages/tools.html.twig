@@ -31,7 +31,7 @@
                     {% for tool in tools %}
                         <div class="tool-button rounded-[0.4rem] p-3" data-tool="{{ tool }}">
                             <div class="w-[70px] h-[70px] md:w-[80px] md:h-[80px] flex flex-row justify-center items-center">
-                                <img class="w-full h-full object-contain" src="/images/tools_icons/{{ tool }}.png"/>
+                                <img class="w-full h-full object-contain" src="/images/tools_icons/{{ tool }}.avif" alt="{{ ("tools.tool." ~ tool ~ ".title")|trans }}"/>
                             </div>
                         </div>
 
