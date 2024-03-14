@@ -14,7 +14,9 @@ final class AssetHttpCacheListener
         $contentType = $event->getResponse()->headers->get("Content-Type");
         if (str_starts_with($contentType, "image") || str_starts_with($contentType, "font")) {
             $event->getResponse()->setCache([
-                "max-age" => 864000
+                'public' => true,
+                'max_age' => 864000,
+                's_maxage' => 864000,
             ]);
         }
     }
