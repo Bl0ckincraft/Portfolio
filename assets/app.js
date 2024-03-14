@@ -181,12 +181,17 @@ document.addEventListener("DOMContentLoaded", function() {
             lights = []
         }
 
+        let lastMaxI = 0
+        let lastMaxJ = 0
         function generateBackground() {
             let length = calcLength();
             let width = calcWidth();
 
-            for (let i = -1; i < Math.ceil(backgroundContainer.offsetWidth / (length + width)); i++) {
-                for (let j = -1; j < Math.ceil(backgroundContainer.offsetHeight / (length + width)); j++) {
+            let maxI = Math.ceil(backgroundContainer.offsetWidth / (length + width))
+            let maxJ = Math.ceil(backgroundContainer.offsetHeight / (length + width))
+
+            for (let i = -1; i < maxI; i++) {
+                for (let j = -1; j < maxJ; j++) {
                     let n = getNodeByIJ(i, j);
                     if (n != null && typeof n != "undefined") continue;
 
@@ -221,8 +226,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             }
 
-            clearLights()
-            addLights(5)
+            if (lastMaxI !== maxI || lastMaxJ !== maxJ) {
+                clearLights()
+                addLights(5)
+            }
         }
 
         setInterval(() => {
@@ -264,7 +271,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 20)
 
         generateBackground()
-        window.addEventListener("resize", function() {
+        window.addEventListener("resize", (e) => {
             generateBackground()
         })
     }
