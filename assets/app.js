@@ -1,11 +1,11 @@
-import './styles/app.scss'
+// import './styles/app.scss'
 import './scripts/loading.js'
-// import './scripts/theme.js'
-import './scripts/parcoursup.js'
-import './scripts/tool.js'
+import './scripts/theme.js'
+// import './scripts/parcoursup.js'
+// import './scripts/tool.js'
 
 // Menu code
-document.addEventListener("DOMContentLoaded", () => {
+/*document.addEventListener("DOMContentLoaded", () => {
     let menuSwitch = document.getElementsByClassName("menu-switch");
     let menu = document.getElementById("menu");
     let menuModal = document.getElementById("menu-modal");
@@ -312,4 +312,4 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("resize", () => {
         applyParams()
     })
-})
+})*/
