@@ -227,8 +227,10 @@ document.addEventListener("DOMContentLoaded", function() {
             }
 
             if (lastMaxI !== maxI || lastMaxJ !== maxJ) {
+                lastMaxI = maxI
+                lastMaxJ = maxJ
                 clearLights()
-                addLights(5)
+                addLights(0)
             }
         }
 
