@@ -18,7 +18,7 @@
   --bg--light-width: calc(var(--bg--width) / 3);
   --bg--light-length: calc(var(--bg--length) / 2);
 
-  /*.box, .filled-path {
+  .box, .filled-path {
     position: absolute;
     background-color: var(--main-color-variant);
   }
@@ -57,16 +57,16 @@
     0 0 82px var(--accent-color),
     0 0 102px var(--accent-color);
 
-    /* CURRENT LIGHT PART VARS *//*
-    --bg--base-from-top: calc((var(--bg--from-j, 0) + 0.5) * (var(--bg--length) + var(--bg--width))); /* Top position of "from" node *//*
-    --bg--diff-target-from-j: calc(var(--bg--target-j, 0) - var(--bg--from-j, 0)); /* Difference between "target" and "from" j index; 0 if light dont move verticaly, 1 if light move down, -1 if light move up *//*
-    --bg--diff-target-from-j-2: calc(var(--bg--diff-target-from-j, 0) * var(--bg--diff-target-from-j, 0)); /* Difference between "target" and "from" j index squared; 0 if light dont move verticaly, 1 else *//*
-    --bg--diff-target-from-j-2-1-2: calc((var(--bg--diff-target-from-j-2, 0) - 1) * (var(--bg--diff-target-from-j-2, 0) - 1)); /* Difference between "target" and "from" j index squared minus one and squared; 0 if light move verticaly, 1 else *//*
+    /* CURRENT LIGHT PART VARS */
+    --bg--base-from-top: calc((var(--bg--from-j, 0) + 0.5) * (var(--bg--length) + var(--bg--width))); /* Top position of "from" node */
+    --bg--diff-target-from-j: calc(var(--bg--target-j, 0) - var(--bg--from-j, 0)); /* Difference between "target" and "from" j index; 0 if light dont move verticaly, 1 if light move down, -1 if light move up */
+    --bg--diff-target-from-j-2: calc(var(--bg--diff-target-from-j, 0) * var(--bg--diff-target-from-j, 0)); /* Difference between "target" and "from" j index squared; 0 if light dont move verticaly, 1 else */
+    --bg--diff-target-from-j-2-1-2: calc((var(--bg--diff-target-from-j-2, 0) - 1) * (var(--bg--diff-target-from-j-2, 0) - 1)); /* Difference between "target" and "from" j index squared minus one and squared; 0 if light move verticaly, 1 else */
 
-    --bg--base-from-left: calc((var(--bg--from-i, 0) + 0.5) * (var(--bg--length) + var(--bg--width))); /* Left position of "from" node *//*
-    --bg--diff-target-from-i: calc(var(--bg--target-i, 0) - var(--bg--from-i, 0)); /* Difference between "target" and "from" i index; 0 if light dont move horizontaly, 1 if light move right, -1 if light move left *//*
-    --bg--diff-target-from-i-2: calc(var(--bg--diff-target-from-i, 0) * var(--bg--diff-target-from-i, 0)); /* Difference between "target" and "from" j index squared; 0 if light dont move horizontaly, 1 else *//*
-    --bg--diff-target-from-i-2-1-2: calc((var(--bg--diff-target-from-i-2, 0) - 1) * (var(--bg--diff-target-from-i-2, 0) - 1)); /* Difference between "target" and "from" j index squared minus one and squared; 0 if light move horizontaly, 1 else *//*
+    --bg--base-from-left: calc((var(--bg--from-i, 0) + 0.5) * (var(--bg--length) + var(--bg--width))); /* Left position of "from" node */
+    --bg--diff-target-from-i: calc(var(--bg--target-i, 0) - var(--bg--from-i, 0)); /* Difference between "target" and "from" i index; 0 if light dont move horizontaly, 1 if light move right, -1 if light move left */
+    --bg--diff-target-from-i-2: calc(var(--bg--diff-target-from-i, 0) * var(--bg--diff-target-from-i, 0)); /* Difference between "target" and "from" j index squared; 0 if light dont move horizontaly, 1 else */
+    --bg--diff-target-from-i-2-1-2: calc((var(--bg--diff-target-from-i-2, 0) - 1) * (var(--bg--diff-target-from-i-2, 0) - 1)); /* Difference between "target" and "from" j index squared minus one and squared; 0 if light move horizontaly, 1 else */
 
     --bg--current-part-calculated-height: min(calc(var(--bg--light-length)), calc(var(--bg--diff-target-from-j-2-1-2, 0) * var(--bg--light-width, 0) + (var(--bg--diff-target-from-j-2, 0) * (var(--bg--length, 0) + var(--bg--width, 0)) * (var(--bg--progress, 0) / 100)) + var(--bg--diff-target-from-j-2) * var(--bg--light-width)));
     --bg--current-part-calculated-width: min(calc(var(--bg--light-length)), calc(var(--bg--diff-target-from-i-2-1-2, 0) * var(--bg--light-width, 0) + (var(--bg--diff-target-from-i-2, 0) * (var(--bg--length, 0) + var(--bg--width, 0)) * (var(--bg--progress, 0) / 100)) + var(--bg--diff-target-from-i-2) * var(--bg--light-width)));
@@ -74,7 +74,7 @@
     --bg--current-part-calculated-left: calc(var(--bg--base-from-left, 0) + var(--bg--diff-target-from-i, 0) * (var(--bg--length, 0) + var(--bg--width, 0)) * (var(--bg--progress, 0) / 100.0) + var(--bg--diff-target-from-i) * ((var(--bg--width) - var(--bg--light-width)) / 2) + var(--bg--diff-target-from-i-2-1-2) * ((var(--bg--width) - var(--bg--light-width)) / 2) - var(--bg--diff-target-from-i-2) * ((var(--bg--diff-target-from-i) + 1) / 2) * var(--bg--current-part-calculated-width) + var(--bg--width) * var(--bg--diff-target-from-i-2) * (-1 * (var(--bg--diff-target-from-i) - 1) / 2) + var(--bg--diff-target-from-i) * var(--bg--light-width));
 
     /* PREVIOUS LIGHT PART VARS */
-    /* SIMILAR VARS *//*
+    /* SIMILAR VARS */
     --bg--base-prev-top: calc((var(--bg--prev-j, 0) + 0.5) * (var(--bg--length) + var(--bg--width)));
     --bg--diff-from-prev-j: calc(var(--bg--from-j, 0) - var(--bg--prev-j, 0));
     --bg--diff-from-prev-j-2: calc(var(--bg--diff-from-prev-j, 0) * var(--bg--diff-from-prev-j, 0));
@@ -103,5 +103,5 @@
     width: var(--bg--current-part-calculated-width);
     top: var(--bg--current-part-calculated-top);
     left: var(--bg--current-part-calculated-left);
-  }*/
+  }
 }
