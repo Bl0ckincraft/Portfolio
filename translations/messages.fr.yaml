@@ -199,57 +199,57 @@ projects:
   project:
     spotify_overlay:
       title: "Spotify Overlay"
-      desc: "Spotify Overlay est une application de bureau.<br/>Cette application permet d'afficher les paroles d'une musique en cours de lecture depuis spotify sous la forme d'un overlay."
+      desc: "Spotify Overlay est une application de bureau.<br/>Cette application permet d'afficher les paroles d'une musique en cours de lecture depuis Spotify sous la forme d'un overlay..."
     block_learning:
       title: "Block Learning"
-      desc: ""
+      desc: "Block Learning est une application mobile.<br/>Cette application a pour but de réviser et d'apprendre des paires, comme par exemple en langue où l'on peut apprendre des mots et leur traduction.<br/>L'utilisateur peut lui-même saisir les paires, et l'application en sélectionnera une au hasard..."
     portfolio:
       title: "Portfolio - John Doe"
-      desc: ""
+      desc: "Ce site web est mon Portfolio.<br/>Dans ce projet, l'aspect graphique est très travaillé mais aussi l'aspect fonctionnel avec la possibilité de communiquer et de commander des services (à venir)..."
     portfolio_matthieu:
       title: "Portfolio - Matthieu Darmigny"
-      desc: ""
+      desc: "Ce site web est le Portfolio de M. Darmigny.<br/>Lors de cette commande, le but fut de créer un site correspondant au design fourni par le client tout en assurant l'accessibilité et l'adaptation aux différents types d'écrans..."
     angel_x_devil:
       title: "Angel X Devil"
-      desc: ""
+      desc: "Ce projet, toujours en activité, est une boutique de mode en ligne.<br/>La création d'un site e-commerce assurant une navigation simple, ainsi que l'aspect de gestion et économique du projet sont les principaux enjeux..."
     kingdoms_plugin:
       title: "Kingdoms - Plugin"
-      desc: ""
+      desc: "Ce plugin Minecraft fut créé pour le serveur <u>MineXplore</u>.<br/>Dans ce projet, la requête était de créer un ensemble de fonctionnalités, permettant aux joueurs de protéger leurs zones de jeux en créant un Royaume. Ils devaient également pouvoir créer des groupes et faire évoluer leur Royaume..."
     kingdoms_app:
       title: "Kingdoms - App"
-      desc: ""
+      desc: "Cette application mobile fut créée pour le serveur <u>MineXplore</u>.<br/>En lien avec le projet précédent, elle devait permettre de visionner les différents royaumes existants sur le serveur, mais aussi de voir leur progression avec un système de classement et de recherche..."
     faylisia_plugin:
       title: "Faylisia - Plugin"
-      desc: ""
+      desc: "En premier lieu, le nom de Faylisia devait être utilisé pour créer mon propre serveur Minecraft.<br/>L'objectif était de recréer l'ensemble des fonctionnalités du jeu, sous forme de plugin pour pouvoir le personnaliser sans que les joueurs aient besoin d'installer des modifications sur leur machine..."
     our_little_world:
       title: "Our Little World"
-      desc: ""
+      desc: "Our Little World est un projet de jeu vidéo en cours de création.<br/>J'aimerais dans ce projet, apprendre la modélisation 3D ainsi que l'utilisation d'outils complexes tels que le moteur Unreal Engine 5 avec le langage de programmation C++..."
     auto_vote_hyping:
       title: "Auto Vote Hyping"
-      desc: ""
+      desc: "Ce projet est un programme automatisant l'action de vote pour un serveur Minecraft.<br/>Il comprend un système d'automatisation d'un navigateur pour effectuer le vote, ainsi qu'un bot Discord me permettant d'informer son utilisateur de ses actions mais aussi de le contrôler à distance..."
     l_systems:
       title: "L-Systems"
-      desc: ""
+      desc: "Ce projet est une application de bureau, développée en Python dans le cadre de la spécialité NSI.<br/>Son objectif est de pouvoir créer des configurations afin de générer des structures \"naturelles\" suivant le principe des l-systems..."
     extracteur_article_pdf:
       title: "Extracteur d'article"
-      desc: ""
+      desc: "Ce projet est une application de bureau.<br/>Elle a permis d'extraire des articles PDF du site du média La Dépêche, pour ensuite les stocker dans les archives de l'association Occitalien visant à soutenir l'Ukraine pendant la guerre..."
     faylisia_launcher:
       title: "Faylisia - Launcher"
-      desc: ""
+      desc: "Cette application est un Launcher personnalisé pour le jeu Minecraft.<br/>Il permet de télécharger les mods présents sur le serveur moddé, et de lancer une configuration personnalisée permettant de jouer au même serveur entre amis sans avoir à mettre à jour les ressources manuellement..."
     minexplore_tracker:
       title: "MineXplore Tracker"
-      desc: ""
+      desc: "Ce projet est une application et un plugin Minecraft développés pour le serveur <u>MineXplore</u>.<br/>Elle permet de récupérer des logs sur les activités des joueurs d'un serveur Minecraft de manière très précise, puis de les afficher et de les lire avec une application de bureau..."
     minexplore_addons:
       title: "MineXplore Addons"
-      desc: ""
+      desc: "Ce projet est un mod Minecraft visant à améliorer l'expérience de jeu sur le serveur <u>MineXplore</u> en proposant des ajouts pour les joueurs qui le souhaitent.<br/>Dans ce mod, j'ai commencé à développer des fonctionnalités affectant uniquement la vision du joueur (Client-Side) en proposant des outils en plus comme un système de recherche pour gagner du temps..."
     spotify_history_reader:
       title: "Streaming History Reader"
-      desc: ""
+      desc: "Cette application mobile est un outil permettant de lire, afficher et filtrer son historique d'écoute de la plateforme Spotify.<br/>Elle permet de regrouper les fichiers obtenus suite à une demande de données auprès de la plateforme et d'en visualiser les données..."
     mhysb:
       title: "More Hypixel SkyBlock"
-      desc: ""
+      desc: "Ce projet est un mod Minecraft visant à améliorer l'expérience de jeu sur le Skyblock du serveur Hypixel.<br/>Ce mod propose des fonctionnalités affectant uniquement la vision du joueur (Client-Side), comme la possibilité d'afficher des points de cheminement sur la carte..."
     infoclass:
       title: "InfoClass"
-      desc: ""
+      desc: "Ce projet de plateforme web n'a pas encore eu l'occasion de voir le jour.<br/>Consistant à créer une plateforme pratique d'utilisation pour les élèves et les professeurs des écoles, ce projet a pour but de rassembler les principales fonctionnalités d'Ecole Directe et de Google Classroom pour en tirer les avantages et y ajouter les avantages d'une modernité..."
 services:
   soon: "Prochainement..."
