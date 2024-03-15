@@ -230,7 +230,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 lastMaxI = maxI
                 lastMaxJ = maxJ
                 clearLights()
-                addLights(0)
+                addLights(5)
             }
         }
 
