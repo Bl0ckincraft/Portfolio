@@ -17,11 +17,13 @@
 @font-face {
     font-family: 'Albas';
     src: url("../fonts/ALBAS.TTF");
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Albas Filled';
     src: url("../fonts/ALBAS_FILLED.TTF");
+    font-display: swap;
 }
 
 ::-webkit-scrollbar {
@@ -103,18 +105,21 @@ hr {
 #parcoursup-message {
     background-color: rgba(var(--main-color-rgb), .7);
     position: fixed;
-    display: none;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
     align-items: center;
     justify-content: center;
-    pointer-events: all;
     z-index: 90;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
+    transition: ease-in-out opacity .6s;
 
     &.shown {
-        display: flex;
+        opacity: 1;
+        pointer-events: all;
     }
 
     .parcoursup-message-content {

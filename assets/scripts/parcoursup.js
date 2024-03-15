@@ -2,8 +2,8 @@ window.addEventListener("load", () => {
     console.log("1")
 
     let closed = localStorage.getItem("parcoursup-message-closed")
+    let elem = document.getElementById("parcoursup-message")
     if (closed == null || typeof closed == 'undefined' || closed === "false") {
-        let elem = document.getElementById("parcoursup-message")
         if (elem != null && typeof elem != 'undefined') {
             elem.classList.add("shown")
 
@@ -18,5 +18,7 @@ window.addEventListener("load", () => {
                 }, 1500)
             })
         }
+    } else {
+        elem.remove()
     }
 })
