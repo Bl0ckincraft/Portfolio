@@ -1,3 +1,7 @@
 window.addEventListener("load", () => {
-    document.getElementById("loader-wrapper").classList.add("hidden")
+    let loader = document.getElementById("loader-wrapper")
+    loader.classList.add("hidden")
+    setTimeout(() => {
+        loader.remove()
+    }, 1500)
 })

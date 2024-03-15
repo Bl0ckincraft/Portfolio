@@ -12,6 +12,10 @@ window.addEventListener("load", () => {
             button.addEventListener("click", () => {
                 elem.classList.remove("shown")
                 localStorage.setItem("parcoursup-message-closed", "true")
+
+                setTimeout(() => {
+                    elem.remove()
+                }, 1500)
             })
         }
     }
