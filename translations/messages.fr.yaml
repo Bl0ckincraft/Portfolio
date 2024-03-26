@@ -3,7 +3,7 @@ welcome: "Accueil"
 description: ""
 parcoursup:
   welcome: "Bienvenue !"
-  content: "Bonjour, je vous remercie de passer voir mon portfolio que j'ai anonymiser pour l'occasion.<br/>Pour une meilleure expérience, je peux vous conseiller de le visionner sur un ordinateur et de naviguer en utilisant le menu en haut à droite.<br/>Je vous souhaite une bonne visite!"
+  content: "Bonjour, je vous remercie de visiter mon portfolio que j'ai anonymiser pour l'occasion.<br/>Pour une meilleure expérience, je peux vous conseiller de le visionner sur un ordinateur et de naviguer en utilisant le menu en haut à droite.<br/>Je vous souhaite une bonne visite!"
   close: "Fermer"
 home:
   state: "Passionné par le développement"
@@ -199,10 +199,10 @@ projects:
   project:
     spotify_overlay:
       title: "Spotify Overlay"
-      desc: "Spotify Overlay est une application de bureau.<br/>Cette application permet d'afficher les paroles d'une musique en cours de lecture depuis Spotify sous la forme d'un overlay..."
+      desc: "Spotify Overlay est une application de bureau.<br/>Elle permet d'afficher les paroles d'une musique en cours de lecture depuis Spotify sous la forme d'un overlay..."
     block_learning:
       title: "Block Learning"
-      desc: "Block Learning est une application mobile.<br/>Cette application a pour but de réviser et d'apprendre des paires, comme par exemple en langue où l'on peut apprendre des mots et leur traduction.<br/>L'utilisateur peut lui-même saisir les paires, et l'application en sélectionnera une au hasard..."
+      desc: "Block Learning est une application mobile.<br/>Elle a pour but de réviser et d'apprendre des paires, comme par exemple en langue où l'on peut apprendre des mots et leur traduction.<br/>L'utilisateur peut lui-même saisir les paires, et l'application en sélectionnera une au hasard..."
     portfolio:
       title: "Portfolio - John Doe"
       desc: "Ce site web est mon Portfolio.<br/>Dans ce projet, l'aspect graphique est très travaillé mais aussi l'aspect fonctionnel avec la possibilité de communiquer et de commander des services (à venir)..."

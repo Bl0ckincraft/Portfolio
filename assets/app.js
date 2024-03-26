@@ -3,6 +3,7 @@ import './scripts/loading.js'
 import './scripts/theme.js'
 import './scripts/parcoursup.js'
 import './scripts/tool.js'
+import './scripts/project.js'
 
 // Menu code
 document.addEventListener("DOMContentLoaded", () => {

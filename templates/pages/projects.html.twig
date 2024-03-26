@@ -28,7 +28,7 @@
 
             <div class="container mx-auto w-full my-auto flex flex-wrap gap-7 justify-center px-4 py-10">
                 {% for project, data in projects %}
-                    <a href="#" class="cursor-pointer project-card rounded-xl w-full min-h-[600px] max-w-[400px] flex flex-col overflow-hidden">
+                    <a href="{{ path('app_project', {'id': project}) }}" class="cursor-pointer project-card rounded-xl w-full min-h-[600px] max-w-[400px] flex flex-col overflow-hidden">
                         <div class="w-full h-[200px]">
                             <img src="/images/projects/list/{{ project }}.avif" class="w-full h-full object-cover" alt="{{ ("projects.project." ~ project ~ ".title")|trans }}"/>
                         </div>
