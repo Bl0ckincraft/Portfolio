@@ -172,7 +172,7 @@
       font-weight: bolder;
       font-size: 60px;
       font-family: var(--albas-font);
-      padding-bottom: 8px;
+      padding-bottom: 6px;
       transition: color .8s ease-in-out;
     }
 
@@ -227,6 +227,14 @@
     border-color: var(--tag-color);
   }
 
+  .viewport {
+    transition: transform .4s ease-in-out;
+  }
+
+  .hidden-pic {
+    display: none;
+  }
+
   /* From friend : https://codepen.io/seeme/pen/MWeqqEg */
   .macbook {
     margin: 0 auto;
@@ -268,13 +276,22 @@
       width: 99%;
     }
 
-    .viewport {
+    #project-picture-container {
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
       top: 0;
       margin: 4.3% 3.2%;
+      overflow: hidden;
+    }
+
+    .viewport {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
       background: #333;
     }
 
@@ -330,6 +347,10 @@
     // width = 1.588 * height
 
     .viewport {
+      background-size: cover;
+    }
+
+    .viewport.pic-scroll {
       transition: background-position 3s ease;
       background-position: 0 0;
       background-size: 100% auto;
@@ -337,7 +358,7 @@
       cursor: pointer;
     }
 
-    .screen:hover .viewport {
+    .screen:hover .viewport.pic-scroll.completely-shown {
       background-position: 0 100%;
     }
   }

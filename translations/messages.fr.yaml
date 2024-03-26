@@ -200,6 +200,8 @@ projects:
     spotify_overlay:
       title: "Spotify Overlay"
       desc: "Spotify Overlay est une application de bureau.<br/>Elle permet d'afficher les paroles d'une musique en cours de lecture depuis Spotify sous la forme d'un overlay..."
+      detail:
+        desc: ""
     block_learning:
       title: "Block Learning"
       desc: "Block Learning est une application mobile.<br/>Elle a pour but de réviser et d'apprendre des paires, comme par exemple en langue où l'on peut apprendre des mots et leur traduction.<br/>L'utilisateur peut lui-même saisir les paires, et l'application en sélectionnera une au hasard..."

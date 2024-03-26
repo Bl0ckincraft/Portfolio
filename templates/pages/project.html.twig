@@ -11,11 +11,11 @@
                 <h3 class="text-5xl" content="{{ ("projects.project." ~ project ~ ".title")|trans }}">{{ ("projects.project." ~ project ~ ".title")|trans }}</h3>
             </div>
             <div class="rounded-3xl project-desc p-7">
-                <p class="text-xl">{{ ("projects.project." ~ project ~ ".desc")|trans|raw }}</p>
+                <p class="text-xl">{{ ("projects.project." ~ project ~ ".detail.desc")|trans|raw }}</p>
             </div>
             <div class="flex flex-wrap gap-3 my-5">
                 {% for tag in projectData.tags %}
-                    <div class="tag rounded-2xl px-2 py-1 font-bold text-xl" style="border-color: {{ ("projects.tags." ~ tag ~ ".color")|trans }}; color: {{ ("projects.tags." ~ tag ~ ".color")|trans }}">{{ ("projects.tags." ~ tag ~ ".name")|trans }}</div>
+                    <div class="tag rounded-2xl px-2 py-1 md:text-xl" style="border-color: {{ ("projects.tags." ~ tag ~ ".color")|trans }}; color: {{ ("projects.tags." ~ tag ~ ".color")|trans }}">{{ ("projects.tags." ~ tag ~ ".name")|trans }}</div>
                 {% endfor %}
             </div>
         </div>
@@ -31,16 +31,18 @@
                 </div>
             {% else %}
                 <div class="macbook">
-                    <div id="project-picture-container" class="screen relative">
-                        {% if projectData.pictures|length > 1 %}
-                            <div id="prev-button"></div>
-                            <div id="next-button"></div>
-                        {% endif %}
-                        {% for picture in projectData.pictures %}
-                            <div class="viewport absolute" style="background-image:url('{{ asset("images/projects/detail/" ~ project ~ "/" ~ picture) }}');">
-                            </div>
-                        {% endfor %}
-                    </div>
+                    <div class="screen relative">
+                        <div id="project-picture-container">
+                            {% if projectData.pictures|length > 1 %}
+                                <div id="prev-button"></div>
+                                <div id="next-button"></div>
+                            {% endif %}
+                            {% for picture, scroll in projectData.pictures %}
+                                <div class="viewport absolute {% if scroll %}pic-scroll{% endif %}" style="background-image:url('{{ asset("images/projects/detail/" ~ project ~ "/" ~ picture) }}');">
+                                </div>
+                            {% endfor %}
+                        </div>
+                        </div>
                     <div class="base"></div>
                     <div class="notch"></div>
                 </div>

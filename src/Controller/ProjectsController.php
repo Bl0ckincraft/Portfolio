@@ -16,8 +16,9 @@ class ProjectsController extends AbstractController
                 "spotify_overlay" => [
                     "isMobile" => false,
                     "pictures" => [
-                        "1.webp",
-                        "2.webp"
+                        "1.webp" => false,
+                        "2.webp" => false,
+                        "3.png" => true,
                     ],
                     "tags" => [
                         "java",
