@@ -182,7 +182,7 @@
   }
 
   #prev-button {
-    left: calc(3.2% + 10px);
+    left: calc(3.2% + 5px);
 
     @media (min-width: 768px) {
       left: calc(3.2% + 20px);
@@ -195,7 +195,7 @@
   }
 
   #next-button {
-    right: calc(3.2% + 10px);
+    right: calc(3.2% + 5px);
 
     @media (min-width: 768px) {
       right: calc(3.2% + 20px);
