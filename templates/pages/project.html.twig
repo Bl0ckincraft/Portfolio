@@ -11,7 +11,7 @@
                 <h3 class="text-5xl" content="{{ ("projects.project." ~ project ~ ".title")|trans }}">{{ ("projects.project." ~ project ~ ".title")|trans }}</h3>
             </div>
             <div class="rounded-3xl project-desc p-7">
-                <p class="text-xl">{{ ("projects.project." ~ project ~ ".detail.desc")|trans|raw }}</p>
+                <p class="text-lg md:text-xl">{{ ("projects.project." ~ project ~ ".detail.desc")|trans|raw }}</p>
             </div>
             <div class="flex flex-wrap gap-3 my-5">
                 {% for tag in projectData.tags %}
@@ -25,13 +25,13 @@
                             <div class="min-w-[100px] max-w-[100px] min-h-[100px] max-h-[100px] rounded-s-xl step-icon-container p-3">
                                 <img class="w-full h-full" alt="{{ step }} step icon" src="{{ asset("images/projects/steps/" ~ step ~ ".webp") }}"/>
                             </div>
-                            <div class="ps-10 pe-6 py-4 h-[100px] flex w-full step-title-container rounded-e-xl">
-                                <span class="text-xl font-bold my-auto">{{ ("projects.project." ~ project ~ ".steps." ~ step ~ ".title")|trans }}</span>
+                            <div class="ps-10 pe-6 py-4 min-h-[100px] flex w-full step-title-container rounded-e-xl">
+                                <span class="text-lg md:text-xl font-bold my-auto">{{ ("projects.project." ~ project ~ ".steps." ~ step ~ ".title")|trans }}</span>
                             </div>
                         </div>
                         <div class="step-content-container step-collapsed rounded-xl mt-[-100px] overflow-y-hidden">
                             <div class="step-content p-3 md:p-5">
-                                <p class="text-lg">{{ ("projects.project." ~ project ~ ".steps." ~ step ~ ".content")|trans|raw }}</p>
+                                <p class="md:text-lg">{{ ("projects.project." ~ project ~ ".steps." ~ step ~ ".content")|trans|raw }}</p>
                             </div>
                         </div>
                     </div>
