@@ -265,6 +265,21 @@ const settings = {
                 }
             }
         }
+    },
+    stepIconBrightness: {
+        type: numberType,
+        predicates: {
+            ["dark"]: {
+                any: {
+                    default: 5
+                }
+            },
+            ["light"]: {
+                any: {
+                    default: 0
+                }
+            }
+        }
     }
 }
 

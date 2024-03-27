@@ -200,8 +200,21 @@ projects:
     spotify_overlay:
       title: "Spotify Overlay"
       desc: "Spotify Overlay est une application de bureau.<br/>Elle permet d'afficher les paroles d'une musique en cours de lecture depuis Spotify sous la forme d'un overlay..."
+      steps:
+        analyse:
+          title: "Analyse de l'objectif et des moyens d'y parvenir"
+          content: "Fusce non quam viverra, posuere enim et, varius purus. Nam diam mi, vestibulum at sagittis non, posuere sed lorem. Nam maximus dignissim lorem, et iaculis eros feugiat eget. Integer efficitur, quam ut pulvinar luctus, nibh nisi sollicitudin eros, in pellentesque magna ligula eget felis. Integer dictum condimentum pretium. Aliquam sollicitudin viverra justo quis accumsan. Suspendisse ornare aliquam mauris, eget dignissim ex placerat a. Etiam sed odio nec purus dictum aliquet. Nunc sit amet ante vitae lacus porta interdum. Phasellus condimentum purus viverra, pellentesque quam ut, placerat neque. Maecenas aliquam risus enim, nec tincidunt metus accumsan vel. Nunc lobortis turpis vel dolor tristique lacinia. Donec viverra varius quam ac egestas. Maecenas sit amet nisi quis augue pretium fermentum vitae eu nisl. "
+        development:
+          title: "Développement du fonctionnement de l'application"
+          content: "Donec consectetur convallis posuere. Morbi pharetra velit ut sem varius, id gravida ipsum finibus. Fusce suscipit tortor faucibus, sollicitudin purus a, porta nisi. Donec vulputate quam id elementum blandit. In hac habitasse platea dictumst. In at tincidunt tellus. Vivamus faucibus tempus ex in sodales. Phasellus non egestas augue. Morbi congue, tellus sed luctus rutrum, augue enim sagittis quam, quis laoreet lorem felis non turpis. Phasellus hendrerit at massa sed dignissim. Sed blandit euismod ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec mattis libero ex, sit amet dignissim orci ultrices ac. Nulla nec dolor elit. "
+        usability:
+          title: "Déploiement de l'application"
+          content: "Mauris augue nulla, sodales in nibh ac, convallis tristique risus. Vivamus id urna ipsum. Morbi posuere orci pharetra tortor ornare vestibulum. Donec eleifend quam ac quam consectetur tempus id ut diam. Aliquam hendrerit mi nec sem ultricies accumsan. Phasellus malesuada facilisis turpis quis tempor. Donec gravida ligula varius massa lacinia efficitur. Donec eleifend justo vitae ipsum imperdiet malesuada. "
+        improvement_ideas:
+          title: "Idées d'améliorations envisagées"
+          content: "Etiam eget leo ullamcorper, vulputate augue et, porta leo. Nulla malesuada laoreet lorem, eget venenatis risus ultricies ut. Maecenas lobortis porta mollis. Proin tristique suscipit sem sit amet faucibus. Donec sapien justo, laoreet eu pharetra sit amet, imperdiet ac libero. Proin ullamcorper egestas ligula eget gravida. Sed venenatis blandit dolor, nec feugiat dui. Ut at laoreet lacus. Suspendisse lobortis ligula nec massa congue, id bibendum lorem hendrerit. Vivamus quis maximus diam, sit amet fermentum lectus. Phasellus placerat quam vitae risus dapibus, rhoncus tincidunt velit gravida. Quisque sem augue, mattis eget orci ac, hendrerit tempus nisi. Nam vel dignissim enim. Fusce vitae congue sapien. "
       detail:
-        desc: ""
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id erat sem. Nulla finibus eros id justo bibendum, vel facilisis tortor sagittis. Ut convallis arcu vitae velit consectetur pretium. Etiam id magna sit amet erat porttitor hendrerit. Pellentesque ut tincidunt mi. Sed scelerisque cursus sem, quis vestibulum mauris. Nulla non sapien leo. Ut non justo tempus, vehicula augue vel, dignissim quam. Duis dapibus dolor eu eros elementum, non rhoncus arcu rhoncus. Donec lacus est, euismod ac eros at, convallis tempus dui. Maecenas id tempus sem, eget finibus orci. Mauris a malesuada arcu. "
     block_learning:
       title: "Block Learning"
       desc: "Block Learning est une application mobile.<br/>Elle a pour but de réviser et d'apprendre des paires, comme par exemple en langue où l'on peut apprendre des mots et leur traduction.<br/>L'utilisateur peut lui-même saisir les paires, et l'application en sélectionnera une au hasard..."

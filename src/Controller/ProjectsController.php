@@ -17,8 +17,7 @@ class ProjectsController extends AbstractController
                     "isMobile" => false,
                     "pictures" => [
                         "1.webp" => false,
-                        "2.webp" => false,
-                        "3.png" => true,
+                        "2.webp" => false
                     ],
                     "tags" => [
                         "java",
@@ -27,7 +26,10 @@ class ProjectsController extends AbstractController
                         "desktop_application"
                     ],
                     "steps" => [
-
+                        "analyse",
+                        "development",
+                        "usability",
+                        "improvement_ideas"
                     ]
                 ],
                 "block_learning" => [

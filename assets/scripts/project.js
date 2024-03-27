@@ -1,3 +1,30 @@
+document.addEventListener("DOMContentLoaded", () => {
+    let stepContainers = []
+    for (const step of document.getElementsByClassName("step-container")) {
+        let stepContentContainer = step.getElementsByClassName("step-content-container")[0]
+        let stepContent = step.getElementsByClassName("step-content")[0]
+        stepContainers.push(stepContentContainer)
+
+        let stepBanner = step.getElementsByClassName("step-banner-container")[0]
+        stepBanner.addEventListener("click", () => {
+            stepContentContainer.style.setProperty("--step-content-height", (stepContent.offsetHeight).toString() + "px")
+            let b = stepContentContainer.classList.contains("step-collapsed")
+
+            for (const container of stepContainers) {
+                container.classList.add("step-collapsed")
+            }
+
+            if (b) {
+                stepContentContainer.classList.remove("step-collapsed")
+            }
+        })
+    }
+})
+
+
+
+
+
 const carrouselAnimationDuration = 600
 
 document.addEventListener('DOMContentLoaded', () => {

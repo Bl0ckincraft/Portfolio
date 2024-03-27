@@ -147,6 +147,76 @@
 
 
 #project {
+  .step-container {
+    .step-banner-container {
+      z-index: 1;
+      border: solid 2px var(--accent-color);
+      background-color: var(--main-color);
+      position: relative;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #0000;
+        border-radius: .75rem;
+        transition: background-color .4s ease-in-out;
+        content: "";
+      }
+
+      &:hover::after {
+        background-color: rgba(var(--main-color-rgb), calc(var(--shadow-opacity) * 2 / 3));
+      }
+
+      .step-icon-container {
+        background: var(--main-color);
+
+        img {
+          filter: grayscale(100) contrast(0) brightness(var(--step-icon-brightness))
+        }
+      }
+
+      .step-title-container {
+        background: linear-gradient(90deg, rgba(var(--accent-color-rgb) , calc(min(1, 1.1 - var(--shadow-opacity)))) 0%, rgba(var(--accent-color-rgb) , calc(min(1, 0.7 - var(--shadow-opacity)))) 100%);
+      }
+    }
+
+    .step-content-container {
+      --step-collapse-animation-duration: .6s;
+
+      background-color: var(--main-color);
+      border: solid 2px var(--accent-color);
+      transition: height var(--step-collapse-animation-duration) ease-in-out;
+      height: calc(100px + var(--step-content-height, 0));
+
+      &.step-collapsed {
+        height: 100px;
+      }
+
+      .step-content {
+        margin-top: 98px;
+        transform: translateY(0px);
+        transition: transform var(--step-collapse-animation-duration) ease-in-out;
+      }
+
+      &.step-collapsed .step-content {
+        pointer-events: none;
+        transform: translateY(calc(-1px * var(--step-content-height)));
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
   #prev-button, #next-button {
     background-color: rgba(var(--main-color-rgb), 0.7);
     border-radius: 50%;
