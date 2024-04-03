@@ -3,71 +3,78 @@
 {% block title %}{{ ("projects.project." ~ project ~ ".title")|trans }}{% endblock %}
 
 {% block body %}
+    {% set flyingHeader = true %}
     {% include 'partials/header.html.twig' %}
 
-    <div id="project" class="d-flex flex-col container mx-auto px-5 my-20">
-        <div class="flex flex-col w-full gap-3 max-w-[800px] mx-auto">
-            <div class="relative mb-5">
-                <h3 class="text-5xl" content="{{ ("projects.project." ~ project ~ ".title")|trans }}">{{ ("projects.project." ~ project ~ ".title")|trans }}</h3>
-            </div>
-            <div class="rounded-3xl project-desc p-7">
-                <p class="text-lg md:text-xl">{{ ("projects.project." ~ project ~ ".detail.desc")|trans|raw }}</p>
-            </div>
-            <div class="flex flex-wrap gap-3 my-5">
-                {% for tag in projectData.tags %}
-                    <div class="tag rounded-2xl px-2 py-1 md:text-xl" style="border-color: {{ ("projects.tags." ~ tag ~ ".color")|trans }}; color: {{ ("projects.tags." ~ tag ~ ".color")|trans }}">{{ ("projects.tags." ~ tag ~ ".name")|trans }}</div>
-                {% endfor %}
-            </div>
-            <div class="flex flex-col w-full mb-10 gap-8">
-                {% for step in projectData.steps %}
-                    <div class="flex flex-col step-container">
-                        <div class="flex flex-row w-full items-center rounded-xl step-banner-container">
-                            <div class="min-w-[100px] max-w-[100px] min-h-[100px] max-h-[100px] rounded-s-xl step-icon-container p-3">
-                                <img class="w-full h-full" alt="{{ step }} step icon" src="{{ asset("images/projects/steps/" ~ step ~ ".webp") }}"/>
-                            </div>
-                            <div class="ps-10 pe-6 py-4 min-h-[100px] flex w-full step-title-container rounded-e-xl">
-                                <span class="text-lg md:text-xl font-bold my-auto">{{ ("projects.project." ~ project ~ ".steps." ~ step ~ ".title")|trans }}</span>
-                            </div>
-                        </div>
-                        <div class="step-content-container step-collapsed rounded-xl mt-[-100px] overflow-y-hidden">
-                            <div class="step-content p-3 md:p-5">
-                                <p class="md:text-lg">{{ ("projects.project." ~ project ~ ".steps." ~ step ~ ".content")|trans|raw }}</p>
-                            </div>
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
+    {% if projectData.ended is defined and not projectData.ended %}
+        <div class="flex flex-col items-center justify-center min-h-screen p-5 container mx-auto">
+            <span class="text-2xl text-center">{{ 'parcoursup.projectNotEnded'|trans }}</span>
         </div>
-        <div>
-            {% if projectData.isMobile %}
-                <div class='mobile-phone'>
-                    <div class='brove'><span class='speaker'></span></div>
-                    <div id="project-picture-container" class='screen'>
-                        <div class="viewport">
-
-                        </div>
-                    </div>
+    {% else %}
+        <div id="project" class="d-flex flex-col container mx-auto px-5 my-20">
+            <div class="flex flex-col w-full gap-3 max-w-[800px] mx-auto">
+                <div class="relative mb-5">
+                    <h3 class="text-5xl" content="{{ ("projects.project." ~ project ~ ".title")|trans }}">{{ ("projects.project." ~ project ~ ".title")|trans }}</h3>
                 </div>
-            {% else %}
-                <div class="macbook">
-                    <div class="screen relative">
-                        <div id="project-picture-container">
-                            {% if projectData.pictures|length > 1 %}
-                                <div id="prev-button"></div>
-                                <div id="next-button"></div>
-                            {% endif %}
-                            {% for picture, scroll in projectData.pictures %}
-                                <div class="viewport absolute {% if scroll %}pic-scroll{% endif %}" style="background-image:url('{{ asset("images/projects/detail/" ~ project ~ "/" ~ picture) }}');">
+                <div class="rounded-3xl project-desc p-7">
+                    <p class="text-lg md:text-xl">{{ ("projects.project." ~ project ~ ".detail.desc")|trans|raw }}</p>
+                </div>
+                <div class="flex flex-wrap gap-3 my-5">
+                    {% for tag in projectData.tags %}
+                        <div class="tag rounded-2xl px-2 py-1 md:text-xl" style="border-color: {{ ("projects.tags." ~ tag ~ ".color")|trans }}; color: {{ ("projects.tags." ~ tag ~ ".color")|trans }}">{{ ("projects.tags." ~ tag ~ ".name")|trans }}</div>
+                    {% endfor %}
+                </div>
+                <div class="flex flex-col w-full mb-10 gap-8">
+                    {% for step in projectData.steps %}
+                        <div class="flex flex-col step-container">
+                            <div class="flex flex-row w-full items-center rounded-xl step-banner-container">
+                                <div class="min-w-[100px] max-w-[100px] min-h-[100px] max-h-[100px] rounded-s-xl step-icon-container p-3">
+                                    <img class="w-full h-full" alt="{{ step }} step icon" src="{{ asset("images/projects/steps/" ~ step ~ ".webp") }}"/>
                                 </div>
-                            {% endfor %}
+                                <div class="ps-10 pe-6 py-4 min-h-[100px] flex w-full step-title-container rounded-e-xl">
+                                    <span class="text-lg md:text-xl font-bold my-auto">{{ ("projects.project." ~ project ~ ".steps." ~ step ~ ".title")|trans }}</span>
+                                </div>
+                            </div>
+                            <div class="step-content-container step-collapsed rounded-xl mt-[-100px] overflow-y-hidden">
+                                <div class="step-content p-3 md:p-5">
+                                    <p class="md:text-lg">{{ ("projects.project." ~ project ~ ".steps." ~ step ~ ".content")|trans|raw }}</p>
+                                </div>
+                            </div>
                         </div>
-                        </div>
-                    <div class="base"></div>
-                    <div class="notch"></div>
+                    {% endfor %}
                 </div>
-            {% endif %}
+            </div>
+            <div>
+                {% if projectData.isMobile %}
+                    <div class='mobile-phone'>
+                        <div class='brove'><span class='speaker'></span></div>
+                        <div id="project-picture-container" class='screen'>
+                            <div class="viewport">
+
+                            </div>
+                        </div>
+                    </div>
+                {% else %}
+                    <div class="macbook">
+                        <div class="screen relative">
+                            <div id="project-picture-container">
+                                {% if projectData.pictures|length > 1 %}
+                                    <div id="prev-button"></div>
+                                    <div id="next-button"></div>
+                                {% endif %}
+                                {% for picture, pictureOptions in projectData.pictures %}
+                                    <div class="viewport absolute {% if pictureOptions[1] %}pic-scroll{% endif %}" style="background-image:url('{{ asset("images/projects/detail/" ~ project ~ "/" ~ picture) }}');">
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="base"></div>
+                        <div class="notch"></div>
+                    </div>
+                {% endif %}
+            </div>
         </div>
-    </div>
+    {% endif %}
 
     {% include 'partials/footer.html.twig' %}
 {% endblock %}

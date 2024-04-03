@@ -1,5 +1,7 @@
 let themeTransitionEnabled = false;
 const themeTransitionDuration = 1000;
+const defaultMainTheme = "dark";
+const defaultAccentTheme = "pink";
 
 let currentValues = {}
 let vars = []
@@ -364,8 +366,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let theme = localStorage.getItem("theme");
     let accentTheme = localStorage.getItem("accent-theme");
 
-    if (theme == null || typeof theme == 'undefined') theme = "dark"
-    if (accentTheme == null || typeof accentTheme == 'undefined') accentTheme = "pink";
+    if (theme == null || typeof theme == 'undefined') theme = defaultMainTheme
+    if (accentTheme == null || typeof accentTheme == 'undefined') accentTheme = defaultAccentTheme;
 
     switchTheme(theme, accentTheme);
 

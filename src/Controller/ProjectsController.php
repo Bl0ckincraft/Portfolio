@@ -9,15 +9,20 @@ use Symfony\Component\Routing\Annotation\Route;
 class ProjectsController extends AbstractController
 {
     /* Recommended size for pictures :
-     * Desktop -> 1600x1000 (ratio 1.6)
+     * Desktop -> ~1600x1000 (ratio ~1.6)
      * Mobile ->
+     *
+     * "pictures" represents medias, they should be written like :
+     *      "filename.ext" => [type, scrollable]" with :
+     *      - type = "picture" or "video"
+     *      - scrollable = true or false depending on if media should scroll when hovered
      */
     private array $projects = [
                 "spotify_overlay" => [
                     "isMobile" => false,
                     "pictures" => [
-                        "1.webp" => false,
-                        "2.webp" => false
+                        "1.webp" => ["picture", false],
+                        "2.webp" => ["picture", false]
                     ],
                     "tags" => [
                         "java",
@@ -30,7 +35,8 @@ class ProjectsController extends AbstractController
                         "development",
                         "usability",
                         "improvement_ideas"
-                    ]
+                    ],
+                    "ended" => false
                 ],
                 "block_learning" => [
                     "isMobile" => true,
@@ -41,8 +47,12 @@ class ProjectsController extends AbstractController
                         "mobile_application"
                     ],
                     "steps" => [
-
-                    ]
+                        "analyse",
+                        "development",
+                        "usability",
+                        "improvement_ideas"
+                    ],
+                    "ended" => false
                 ],
                 "portfolio" => [
                     "isMobile" => false,
@@ -55,7 +65,8 @@ class ProjectsController extends AbstractController
                     ],
                     "steps" => [
 
-                    ]
+                    ],
+                    "ended" => false
                 ],
                 "portfolio_matthieu" => [
                     "isMobile" => false,
@@ -68,7 +79,8 @@ class ProjectsController extends AbstractController
                     ],
                     "steps" => [
 
-                    ]
+                    ],
+                    "ended" => false
                 ],
                 "angel_x_devil" => [
                     "isMobile" => false,
@@ -82,7 +94,8 @@ class ProjectsController extends AbstractController
                     ],
                     "steps" => [
 
-                    ]
+                    ],
+                    "ended" => false
                 ],
                 "kingdoms_plugin" => [
                     "isMobile" => false,
@@ -96,7 +109,8 @@ class ProjectsController extends AbstractController
                     ],
                     "steps" => [
 
-                    ]
+                    ],
+                    "ended" => false
                 ],
                 "kingdoms_app" => [
                     "isMobile" => true,
@@ -111,7 +125,8 @@ class ProjectsController extends AbstractController
                     ],
                     "steps" => [
 
-                    ]
+                    ],
+                    "ended" => false
                 ],
                 "faylisia_plugin" => [
                     "isMobile" => false,
@@ -124,7 +139,8 @@ class ProjectsController extends AbstractController
                     ],
                     "steps" => [
 
-                    ]
+                    ],
+                    "ended" => false
                 ],
                 "our_little_world" => [
                     "isMobile" => false,
@@ -141,7 +157,8 @@ class ProjectsController extends AbstractController
                     ],
                     "steps" => [
 
-                    ]
+                    ],
+                    "ended" => false
                 ],
                 "auto_vote_hyping" => [
                     "isMobile" => false,
@@ -156,7 +173,8 @@ class ProjectsController extends AbstractController
                     ],
                     "steps" => [
 
-                    ]
+                    ],
+                    "ended" => false
                 ],
                 "l_systems" => [
                     "isMobile" => false,
@@ -167,7 +185,8 @@ class ProjectsController extends AbstractController
                     ],
                     "steps" => [
 
-                    ]
+                    ],
+                    "ended" => false
                 ],
                 "extracteur_article_pdf" => [
                     "isMobile" => false,
@@ -180,7 +199,8 @@ class ProjectsController extends AbstractController
                     ],
                     "steps" => [
 
-                    ]
+                    ],
+                    "ended" => false
                 ],
                 "faylisia_launcher" => [
                     "isMobile" => false,
@@ -194,7 +214,8 @@ class ProjectsController extends AbstractController
                     ],
                     "steps" => [
 
-                    ]
+                    ],
+                    "ended" => false
                 ],
                 "minexplore_tracker" => [
                     "isMobile" => false,
@@ -207,7 +228,8 @@ class ProjectsController extends AbstractController
                     ],
                     "steps" => [
 
-                    ]
+                    ],
+                    "ended" => false
                 ],
                 "minexplore_addons" => [
                     "isMobile" => false,
@@ -219,7 +241,8 @@ class ProjectsController extends AbstractController
                     ],
                     "steps" => [
 
-                    ]
+                    ],
+                    "ended" => false
                 ],
                 "spotify_history_reader" => [
                     "isMobile" => true,
@@ -231,7 +254,8 @@ class ProjectsController extends AbstractController
                     ],
                     "steps" => [
 
-                    ]
+                    ],
+                    "ended" => false
                 ],
                 "mhysb" => [
                     "isMobile" => false,
@@ -245,7 +269,8 @@ class ProjectsController extends AbstractController
                     ],
                     "steps" => [
 
-                    ]
+                    ],
+                    "ended" => false
                 ],
                 "infoclass" => [
                     "isMobile" => false,
@@ -259,7 +284,8 @@ class ProjectsController extends AbstractController
                     ],
                     "steps" => [
 
-                    ]
+                    ],
+                    "ended" => false
                 ]
             ];
 

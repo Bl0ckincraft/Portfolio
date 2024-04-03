@@ -3,8 +3,9 @@ welcome: "Accueil"
 description: ""
 parcoursup:
   welcome: "Bienvenue !"
-  content: "Bonjour, je vous remercie de visiter mon portfolio que j'ai anonymiser pour l'occasion.<br/>Pour une meilleure expérience, je peux vous conseiller de le visionner sur un ordinateur et de naviguer en utilisant le menu en haut à droite.<br/>Je vous souhaite une bonne visite!"
+  content: "Bonjour, je vous remercie de visiter mon portfolio que j'ai anonymiser sous le nom de John Doe pour respecter les règles de Parcoursup.<br/>Ce portfolio est codé sans outils no-code et 100% à la main, il est également personnalisable, en effet, vous pouvez modifier les thèmes dans le menu.<br/>Pour une meilleure expérience, je peux vous conseiller de le visionner sur un ordinateur et de naviguer en utilisant le menu en haut à droite.<br/>En vous souhaitant une bonne visite!"
   close: "Fermer"
+  projectNotEnded: "Veuillez m'excuser, la page pour ce projet n'est pas encore disponible, elle devrait l'être à partir du dimanche 7 avril."
 home:
   state: "Passionné par le développement"
   aboutTitle: "À Propos De Moi"
@@ -23,13 +24,13 @@ home:
       content: "J'aime aussi beaucoup voyager. Pour l'instant, j'ai exploré uniquement l'Europe, visitant l'Espagne, l'Angleterre, l'Allemagne, l'Italie, les Pays-Bas, et bientôt la Pologne. Cependant, j'aimerais également découvrir des villes plus éloignées comme New York, Tokyo ou Séoul."
     goals:
       title: "Objectifs"
-      content: "Dans la vie, j'aspire à devenir développeur dans le jeu vidéo ou ingénieur logiciel. Je vise une classe préparatoire aux grandes écoles en filière MP2I afin d'intégrer par la suite une école d'ingénieur dans le domaine de l'informatique."
+      content: "Dans la vie, j'aspire à devenir développeur dans le jeu vidéo, ingénieur logiciel ou à travailler dans la cybersécurité. En effet, mon objectif est de pouvoir créer ce que je souhaite quand je le souhaite et, pour cela, je veux développer mes compétences dans le plus de domaines informatiques possible."
     passion:
       title: "Ma plus grande Passion"
       content: "L'informatique, et particulièrement le codage, demeure ma plus grande passion. J'ai eu l'opportunité de l'explorer en groupe à travers des événements tels que \"La Nuit Du Code\", où nous avons créé un jeu en quelques heures, ainsi qu'avec \"Pass Ton Hack D'abord\", un concours national de cybersécurité au niveau lycée."
 menu:
   menu: "Menu"
-  mainTheme: "Thème Principale"
+  mainTheme: "Thème Principal"
   secondaryTheme: "Thème Secondaire"
   about:
     title: "À propos"
@@ -218,6 +219,21 @@ projects:
     block_learning:
       title: "Block Learning"
       desc: "Block Learning est une application mobile.<br/>Elle a pour but de réviser et d'apprendre des paires, comme par exemple en langue où l'on peut apprendre des mots et leur traduction.<br/>L'utilisateur peut lui-même saisir les paires, et l'application en sélectionnera une au hasard..."
+      steps:
+        analyse:
+          title: "Analyse de l'objectif et des moyens d'y parvenir"
+          content: "Fusce non quam viverra, posuere enim et, varius purus. Nam diam mi, vestibulum at sagittis non, posuere sed lorem. Nam maximus dignissim lorem, et iaculis eros feugiat eget. Integer efficitur, quam ut pulvinar luctus, nibh nisi sollicitudin eros, in pellentesque magna ligula eget felis. Integer dictum condimentum pretium. Aliquam sollicitudin viverra justo quis accumsan. Suspendisse ornare aliquam mauris, eget dignissim ex placerat a. Etiam sed odio nec purus dictum aliquet. Nunc sit amet ante vitae lacus porta interdum. Phasellus condimentum purus viverra, pellentesque quam ut, placerat neque. Maecenas aliquam risus enim, nec tincidunt metus accumsan vel. Nunc lobortis turpis vel dolor tristique lacinia. Donec viverra varius quam ac egestas. Maecenas sit amet nisi quis augue pretium fermentum vitae eu nisl. "
+        development:
+          title: "Développement du fonctionnement de l'application"
+          content: "Donec consectetur convallis posuere. Morbi pharetra velit ut sem varius, id gravida ipsum finibus. Fusce suscipit tortor faucibus, sollicitudin purus a, porta nisi. Donec vulputate quam id elementum blandit. In hac habitasse platea dictumst. In at tincidunt tellus. Vivamus faucibus tempus ex in sodales. Phasellus non egestas augue. Morbi congue, tellus sed luctus rutrum, augue enim sagittis quam, quis laoreet lorem felis non turpis. Phasellus hendrerit at massa sed dignissim. Sed blandit euismod ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec mattis libero ex, sit amet dignissim orci ultrices ac. Nulla nec dolor elit. "
+        usability:
+          title: "Déploiement de l'application"
+          content: "Mauris augue nulla, sodales in nibh ac, convallis tristique risus. Vivamus id urna ipsum. Morbi posuere orci pharetra tortor ornare vestibulum. Donec eleifend quam ac quam consectetur tempus id ut diam. Aliquam hendrerit mi nec sem ultricies accumsan. Phasellus malesuada facilisis turpis quis tempor. Donec gravida ligula varius massa lacinia efficitur. Donec eleifend justo vitae ipsum imperdiet malesuada. "
+        improvement_ideas:
+          title: "Idées d'améliorations envisagées"
+          content: "Etiam eget leo ullamcorper, vulputate augue et, porta leo. Nulla malesuada laoreet lorem, eget venenatis risus ultricies ut. Maecenas lobortis porta mollis. Proin tristique suscipit sem sit amet faucibus. Donec sapien justo, laoreet eu pharetra sit amet, imperdiet ac libero. Proin ullamcorper egestas ligula eget gravida. Sed venenatis blandit dolor, nec feugiat dui. Ut at laoreet lacus. Suspendisse lobortis ligula nec massa congue, id bibendum lorem hendrerit. Vivamus quis maximus diam, sit amet fermentum lectus. Phasellus placerat quam vitae risus dapibus, rhoncus tincidunt velit gravida. Quisque sem augue, mattis eget orci ac, hendrerit tempus nisi. Nam vel dignissim enim. Fusce vitae congue sapien. "
+      detail:
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id erat sem. Nulla finibus eros id justo bibendum, vel facilisis tortor sagittis. Ut convallis arcu vitae velit consectetur pretium. Etiam id magna sit amet erat porttitor hendrerit. Pellentesque ut tincidunt mi. Sed scelerisque cursus sem, quis vestibulum mauris. Nulla non sapien leo. Ut non justo tempus, vehicula augue vel, dignissim quam. Duis dapibus dolor eu eros elementum, non rhoncus arcu rhoncus. Donec lacus est, euismod ac eros at, convallis tempus dui. Maecenas id tempus sem, eget finibus orci. Mauris a malesuada arcu. "
     portfolio:
       title: "Portfolio - John Doe"
       desc: "Ce site web est mon Portfolio.<br/>Dans ce projet, l'aspect graphique est très travaillé mais aussi l'aspect fonctionnel avec la possibilité de communiquer et de commander des services (à venir)..."
