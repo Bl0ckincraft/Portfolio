@@ -3,7 +3,7 @@
 {% block title %}{{ ("projects.project." ~ project ~ ".title")|trans }}{% endblock %}
 
 {% block body %}
-    {% set flyingHeader = true %}
+    {% if projectData.ended is defined and not projectData.ended %}{% set flyingHeader = true %}{% endif %}
     {% include 'partials/header.html.twig' %}
 
     {% if projectData.ended is defined and not projectData.ended %}
@@ -46,12 +46,17 @@
             </div>
             <div>
                 {% if projectData.isMobile %}
-                    <div class='mobile-phone'>
+                    <div class="mobile-phone">
                         <div class='brove'><span class='speaker'></span></div>
                         <div id="project-picture-container" class='screen'>
-                            <div class="viewport">
-
-                            </div>
+                            {% if projectData.pictures|length > 1 %}
+                                <div id="prev-button"></div>
+                                <div id="next-button"></div>
+                            {% endif %}
+                            {% for picture, pictureOptions in projectData.pictures %}
+                                <div class="viewport absolute {% if pictureOptions[1] %}pic-scroll{% endif %}" style="background-image:url('{{ asset("images/projects/detail/" ~ project ~ "/" ~ picture) }}');">
+                                </div>
+                            {% endfor %}
                         </div>
                     </div>
                 {% else %}

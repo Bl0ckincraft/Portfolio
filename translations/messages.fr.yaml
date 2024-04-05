@@ -127,6 +127,7 @@ tools:
 projects:
   title: "Mes Projets"
   subtitle: "Découvrir les projets que j'ai pu réaliser !"
+  subtitle_indication: "Projets codés 100% à la main, sans outils no-code"
   tags:
     java:
       name: "Java"
@@ -203,37 +204,55 @@ projects:
       desc: "Spotify Overlay est une application de bureau.<br/>Elle permet d'afficher les paroles d'une musique en cours de lecture depuis Spotify sous la forme d'un overlay..."
       steps:
         analyse:
-          title: "Analyse de l'objectif et des moyens d'y parvenir"
-          content: "Fusce non quam viverra, posuere enim et, varius purus. Nam diam mi, vestibulum at sagittis non, posuere sed lorem. Nam maximus dignissim lorem, et iaculis eros feugiat eget. Integer efficitur, quam ut pulvinar luctus, nibh nisi sollicitudin eros, in pellentesque magna ligula eget felis. Integer dictum condimentum pretium. Aliquam sollicitudin viverra justo quis accumsan. Suspendisse ornare aliquam mauris, eget dignissim ex placerat a. Etiam sed odio nec purus dictum aliquet. Nunc sit amet ante vitae lacus porta interdum. Phasellus condimentum purus viverra, pellentesque quam ut, placerat neque. Maecenas aliquam risus enim, nec tincidunt metus accumsan vel. Nunc lobortis turpis vel dolor tristique lacinia. Donec viverra varius quam ac egestas. Maecenas sit amet nisi quis augue pretium fermentum vitae eu nisl. "
+          title: "Analyse de l'objectif et recherche de moyens pour y parvenir"
+          content: "
+            Comme bien souvent, le projet commence sur la base d'un problème, ici, la volonté de pouvoir afficher ou cacher les paroles d'une musique de manière rapide et sans perturber nos autres actions.<br/>
+            Dans ma recherche de solution, j'ai d'abord exploré le code du mod Minecraft Snoopy, qui permet d'afficher le nom de la musique en cours de lecture sur le jeu. Cependant, il récupérait seulement le nom via le nom que prenait le processus Spotify, j'ai donc dû chercher une autre solution.<br/>
+            Je me suis alors intéressé à la synchronisation que réalise Spotify entre l'application et le navigateur lorsqu'ils sont connectés au même compte. Mon idée était donc d'ouvrir un navigateur fictif, de me connecter au compte de l'utilisateur, puis d'afficher le contenu de la section des paroles de la page web Spotify. C'est alors que j'ai remarqué un décalage entre la musique en cours de lecture et la version navigateur de Spotify, retour à la case départ.<br/>
+            La dernière solution qui s'offrait alors à moi fut de collecter les données de la musique en cours de lecture, puis de récupérer ses paroles, et enfin de trouver quelle partie des paroles était en train d'être chantée."
         development:
           title: "Développement du fonctionnement de l'application"
-          content: "Donec consectetur convallis posuere. Morbi pharetra velit ut sem varius, id gravida ipsum finibus. Fusce suscipit tortor faucibus, sollicitudin purus a, porta nisi. Donec vulputate quam id elementum blandit. In hac habitasse platea dictumst. In at tincidunt tellus. Vivamus faucibus tempus ex in sodales. Phasellus non egestas augue. Morbi congue, tellus sed luctus rutrum, augue enim sagittis quam, quis laoreet lorem felis non turpis. Phasellus hendrerit at massa sed dignissim. Sed blandit euismod ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec mattis libero ex, sit amet dignissim orci ultrices ac. Nulla nec dolor elit. "
+          content: "
+            La solution trouvée, le développement a pu commencer.<br/>
+            Lors de son lancement, l'application connaît d'abord une phase <u>d'initialisation</u>. J'ai d'abord eu besoin de me connecter au compte Spotify de l'utilisateur, afin de récupérer certains tokens nécessaires au fonctionnement de l'application, à savoir le sp_dc et la sp_key. J'ai aussi eu besoin de lancer un serveur local, puis d'accepter l'utilisation de l'API pour que l'application puisse obtenir un access token et un refresh token pour l'API. À cause des protections anti-robot de la plateforme, j'ai eu besoin de lancer un navigateur virtuel pour effectuer toutes les opérations précédentes, dans mon cas, j'ai utilisé GeckoDriver. Cela fait, le serveur local et le navigateur peuvent être fermés jusqu'au prochain lancement de l'application.<br/>
+            Maintenant initialisée, l'application entre dans sa phase de <u>fonctionnement</u>. Elle requiert régulièrement l'API de Spotify pour récupérer la musique en cours de lecture, son id et sa progression, en vérifiant si elle doit rafraîchir les tokens en vue d'une utilisation plus longue. Elle convertit ensuite l'id en id local pour Spotify, en effet, Spotify utilise différents formats d'identifiants dans l'API et en interne. Enfin, elle utilise les tokens sp_dc et sp_key pour se faire passer pour la plateforme elle-même et récupérer les paroles de la musique. Il ne lui reste alors plus qu'à trouver les bonnes paroles en fonction de la progression de la musique. Le rendu est quant à lui réalisé avec Java Swing, et JNA a permis de faire passer toutes les actions au travers de cette fenêtre."
         usability:
           title: "Déploiement de l'application"
-          content: "Mauris augue nulla, sodales in nibh ac, convallis tristique risus. Vivamus id urna ipsum. Morbi posuere orci pharetra tortor ornare vestibulum. Donec eleifend quam ac quam consectetur tempus id ut diam. Aliquam hendrerit mi nec sem ultricies accumsan. Phasellus malesuada facilisis turpis quis tempor. Donec gravida ligula varius massa lacinia efficitur. Donec eleifend justo vitae ipsum imperdiet malesuada. "
+          content: "
+            Le déploiement fut rapide, car l'application n'a pour but initial d'être distribuée de manière publique. De ce fait, il existe uniquement un fichier de configuration pour entrer les identifiants du compte Spotify, la localisation du fichier GeckoDriver et le port du serveur local."
         improvement_ideas:
-          title: "Idées d'améliorations envisagées"
-          content: "Etiam eget leo ullamcorper, vulputate augue et, porta leo. Nulla malesuada laoreet lorem, eget venenatis risus ultricies ut. Maecenas lobortis porta mollis. Proin tristique suscipit sem sit amet faucibus. Donec sapien justo, laoreet eu pharetra sit amet, imperdiet ac libero. Proin ullamcorper egestas ligula eget gravida. Sed venenatis blandit dolor, nec feugiat dui. Ut at laoreet lacus. Suspendisse lobortis ligula nec massa congue, id bibendum lorem hendrerit. Vivamus quis maximus diam, sit amet fermentum lectus. Phasellus placerat quam vitae risus dapibus, rhoncus tincidunt velit gravida. Quisque sem augue, mattis eget orci ac, hendrerit tempus nisi. Nam vel dignissim enim. Fusce vitae congue sapien. "
+          title: "Idées d'améliorations"
+          content: "
+            Les perspectives d'améliorations peuvent être nombreuses. Parmi les plus majeures, l'on peut en sélectionner certaines:<br/>
+            ● L'ajout d'un mode de configuration pour remplacer le simple fichier, permettant par la même, de déplacer et de dimensionner l'overlay. Ce mode permettrait ainsi d'améliorer et de simplifier l'utilisation de l'application, mais aussi d'ajouter une sécurité visant à crypter les identifiants Spotify dans la configuration, en ajoutant un mot de passe ou un code PIN à l'application.<br/>
+            ● L'ajout d'un lanceur sous la forme d'un .exe, permettant de lancer l'application à partir de la barre des tâches ou du menu démarrer, mais aussi de simplifier l'installation et la suppression de l'application.<br/>
+            ● Bien que je n'ai pas encore su identifier la source du problème, je sais que l'application peut parfois avoir du mal à mettre à jour l'overlay lorsque qu'il y a plusieurs changements de musique de suite. Régler ce dysfonctionnement permettrait d'éviter certaines gênes à l'utilisateur et ainsi améliorer son utilisation."
       detail:
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id erat sem. Nulla finibus eros id justo bibendum, vel facilisis tortor sagittis. Ut convallis arcu vitae velit consectetur pretium. Etiam id magna sit amet erat porttitor hendrerit. Pellentesque ut tincidunt mi. Sed scelerisque cursus sem, quis vestibulum mauris. Nulla non sapien leo. Ut non justo tempus, vehicula augue vel, dignissim quam. Duis dapibus dolor eu eros elementum, non rhoncus arcu rhoncus. Donec lacus est, euismod ac eros at, convallis tempus dui. Maecenas id tempus sem, eget finibus orci. Mauris a malesuada arcu. "
+        desc: "Spotify Overlay est donc une application Java pour Ordinateur. Elle permet d'afficher les paroles de la musique en cours de lecture sur Spotify sous la forme d'un overlay, qui peut être activé/désactivé avec une simple touche.<br/>C'est-à-dire qu'elle permet d'afficher les paroles d'une musique sans perturber les autres actions que vous souhaitez faire, en effet, vous pouvez toujours cliquer, voir, défiler, jouer au travers de cet overlay. De ce fait, il peut être utilisé en codant, en jouant, ou autre comme vous pouvez le voir sur les images ci-dessous."
     block_learning:
       title: "Block Learning"
       desc: "Block Learning est une application mobile.<br/>Elle a pour but de réviser et d'apprendre des paires, comme par exemple en langue où l'on peut apprendre des mots et leur traduction.<br/>L'utilisateur peut lui-même saisir les paires, et l'application en sélectionnera une au hasard..."
       steps:
-        analyse:
-          title: "Analyse de l'objectif et des moyens d'y parvenir"
-          content: "Fusce non quam viverra, posuere enim et, varius purus. Nam diam mi, vestibulum at sagittis non, posuere sed lorem. Nam maximus dignissim lorem, et iaculis eros feugiat eget. Integer efficitur, quam ut pulvinar luctus, nibh nisi sollicitudin eros, in pellentesque magna ligula eget felis. Integer dictum condimentum pretium. Aliquam sollicitudin viverra justo quis accumsan. Suspendisse ornare aliquam mauris, eget dignissim ex placerat a. Etiam sed odio nec purus dictum aliquet. Nunc sit amet ante vitae lacus porta interdum. Phasellus condimentum purus viverra, pellentesque quam ut, placerat neque. Maecenas aliquam risus enim, nec tincidunt metus accumsan vel. Nunc lobortis turpis vel dolor tristique lacinia. Donec viverra varius quam ac egestas. Maecenas sit amet nisi quis augue pretium fermentum vitae eu nisl. "
-        development:
-          title: "Développement du fonctionnement de l'application"
-          content: "Donec consectetur convallis posuere. Morbi pharetra velit ut sem varius, id gravida ipsum finibus. Fusce suscipit tortor faucibus, sollicitudin purus a, porta nisi. Donec vulputate quam id elementum blandit. In hac habitasse platea dictumst. In at tincidunt tellus. Vivamus faucibus tempus ex in sodales. Phasellus non egestas augue. Morbi congue, tellus sed luctus rutrum, augue enim sagittis quam, quis laoreet lorem felis non turpis. Phasellus hendrerit at massa sed dignissim. Sed blandit euismod ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec mattis libero ex, sit amet dignissim orci ultrices ac. Nulla nec dolor elit. "
-        usability:
-          title: "Déploiement de l'application"
-          content: "Mauris augue nulla, sodales in nibh ac, convallis tristique risus. Vivamus id urna ipsum. Morbi posuere orci pharetra tortor ornare vestibulum. Donec eleifend quam ac quam consectetur tempus id ut diam. Aliquam hendrerit mi nec sem ultricies accumsan. Phasellus malesuada facilisis turpis quis tempor. Donec gravida ligula varius massa lacinia efficitur. Donec eleifend justo vitae ipsum imperdiet malesuada. "
+        validation:
+          title: "Validation des paires"
+          content: "
+            Lors de son utilisation, les paires actives sont chargées, puis l'application en sélectionne une au hasard. Elle affiche à l'écran un élément de la paire, puis attend une réponse de l'utilisateur qu'elle compare à l'autre élément de la paire pour valider ou non la réponse.<br/>
+            Cependant, la vérification est un point nécessaire à améliorer. En effet, actuellement, il faudrait permettre à l'utilisateur de choisir un degré de comparaison, par exemple, en prenant en compte les majuscules, un pourcentage de mots lorsqu'il s'agit d'une phrase ou encore une marge d'erreur pour un nombre."
+        configuration:
+          title: "Configuration de l'application"
+          content: "
+            L'objectif de cette application étant d'apprendre, il fallait que l'utilisateur puisse choisir quoi apprendre. Ainsi, la configuration de l'application permet à son utilisateur de créer des paires dans des catégories qu'il a précédemment créées. L'utilisateur peut également décider de désactiver certaines catégories, afin qu'elles n'apparaissent plus pendant l'entraînement jusqu'à ce qu'elles soient réactivées."
+        sharing:
+          title: "Partage de paires: Import et Export"
+          content: "
+            L'application permet également de partager des paires. En effet, une catégorie peut être exportée au format JSON puis importée, ce qui permet à plusieurs utilisateurs de se transmettre des paires, et ainsi leur éviter de devoir toutes les créer.<br/>
+            Cependant, ce système de partage mériterait d'être amélioré. En effet, en fonction de la quantité de paires dans la catégorie partagée, le message JSON peut très vite devenir très long et peu pratique à partager. Il faudrait essayer d'utiliser un système de compression."
         improvement_ideas:
-          title: "Idées d'améliorations envisagées"
-          content: "Etiam eget leo ullamcorper, vulputate augue et, porta leo. Nulla malesuada laoreet lorem, eget venenatis risus ultricies ut. Maecenas lobortis porta mollis. Proin tristique suscipit sem sit amet faucibus. Donec sapien justo, laoreet eu pharetra sit amet, imperdiet ac libero. Proin ullamcorper egestas ligula eget gravida. Sed venenatis blandit dolor, nec feugiat dui. Ut at laoreet lacus. Suspendisse lobortis ligula nec massa congue, id bibendum lorem hendrerit. Vivamus quis maximus diam, sit amet fermentum lectus. Phasellus placerat quam vitae risus dapibus, rhoncus tincidunt velit gravida. Quisque sem augue, mattis eget orci ac, hendrerit tempus nisi. Nam vel dignissim enim. Fusce vitae congue sapien. "
+          title: "Idée d'amélioration: « Séances d'entraînement »"
+          content: "
+            Une idée d'amélioration majeure pour l'application pourrait être de créer un système de « Séances d'entraînement ». Concrètement, il s'agirait de pouvoir commencer une série d'un nombre défini de paires, puis d'en enregistrer les statistiques pour avoir une évaluation de ses performances. On pourrait également observer sa progression à l'aide de graphiques et en fonction de chaque catégorie."
       detail:
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id erat sem. Nulla finibus eros id justo bibendum, vel facilisis tortor sagittis. Ut convallis arcu vitae velit consectetur pretium. Etiam id magna sit amet erat porttitor hendrerit. Pellentesque ut tincidunt mi. Sed scelerisque cursus sem, quis vestibulum mauris. Nulla non sapien leo. Ut non justo tempus, vehicula augue vel, dignissim quam. Duis dapibus dolor eu eros elementum, non rhoncus arcu rhoncus. Donec lacus est, euismod ac eros at, convallis tempus dui. Maecenas id tempus sem, eget finibus orci. Mauris a malesuada arcu. "
+        desc: "Block Learning est une application mobile, codée avec Flutter en Dart. Elle a pour but de permettre à son utilisateur de s'entraîner pour apprendre des notions telles que du vocabulaire, des définitions, des dates ou encore les carrés en Mathématiques. Elle fonctionne sur un système de paires, sélectionnant une valeur aléatoire d'une paire sélectionnée elle aussi aléatoirement, et vérifiant si l'entrée de l'utilisateur est bien l'autre valeur de la paire, comme vous pouvez le voir dans les images ci-dessous."
     portfolio:
       title: "Portfolio - John Doe"
       desc: "Ce site web est mon Portfolio.<br/>Dans ce projet, l'aspect graphique est très travaillé mais aussi l'aspect fonctionnel avec la possibilité de communiquer et de commander des services (à venir)..."

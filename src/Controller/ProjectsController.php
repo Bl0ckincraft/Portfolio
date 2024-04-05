@@ -10,11 +10,11 @@ class ProjectsController extends AbstractController
 {
     /* Recommended size for pictures :
      * Desktop -> ~1600x1000 (ratio ~1.6)
-     * Mobile ->
+     * Mobile -> 350x758 (ratio ~0.46)
      *
      * "pictures" represents medias, they should be written like :
      *      "filename.ext" => [type, scrollable]" with :
-     *      - type = "picture" or "video"
+     *      - type = "picture" or "video" (video not implemented yet)
      *      - scrollable = true or false depending on if media should scroll when hovered
      */
     private array $projects = [
@@ -35,24 +35,28 @@ class ProjectsController extends AbstractController
                         "development",
                         "usability",
                         "improvement_ideas"
-                    ],
-                    "ended" => false
+                    ]
                 ],
                 "block_learning" => [
                     "isMobile" => true,
-                    "pictures" => [],
+                    "pictures" => [
+                        "1.webp" => ["picture", false],
+                        "2.webp" => ["picture", false],
+                        "3.webp" => ["picture", false],
+                        "4.webp" => ["picture", false],
+                        "5.webp" => ["picture", false]
+                    ],
                     "tags" => [
                         "dart",
                         "flutter",
                         "mobile_application"
                     ],
                     "steps" => [
-                        "analyse",
-                        "development",
-                        "usability",
+                        "validation",
+                        "configuration",
+                        "sharing",
                         "improvement_ideas"
-                    ],
-                    "ended" => false
+                    ]
                 ],
                 "portfolio" => [
                     "isMobile" => false,

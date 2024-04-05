@@ -1,12 +1,20 @@
 #projects {
-  .title, .subtitle, .para {
+  .title, .subtitle, .subtitle-indication {
     text-transform: uppercase;
     font-family: var(--albas-font);
-    text-shadow: 0 0 15px var(--accent-color), 0 0 20px var(--accent-color);
     transition: ease-in-out font-size .5s;
   }
 
-  .title::before, .subtitle::before {
+  .title, .subtitle {
+    text-shadow: 0 0 15px var(--accent-color), 0 0 20px var(--accent-color);
+  }
+
+  .subtitle-indication {
+    text-shadow: 0 0 10px var(--accent-color), 0 0 13px var(--accent-color);
+    color: var(--text-color-variant)
+  }
+
+  .title::before {
     content: attr(content);
     position: absolute;
     left: 0;
@@ -27,6 +35,10 @@
     font-size: 30px;
   }
 
+  .subtitle-indication {
+    font-size: 17px;
+  }
+
   @media (min-width: 640px){
     .title {
       font-size: 55px;
@@ -35,6 +47,10 @@
 
     .subtitle {
       font-size: 32px;
+    }
+
+    .subtitle-indication {
+      font-size: 19px;
     }
   }
 
@@ -47,6 +63,10 @@
     .subtitle {
       font-size: 38px;
     }
+
+    .subtitle-indication {
+      font-size: 23px;
+    }
   }
 
   @media (min-width: 1024px){
@@ -57,6 +77,10 @@
 
     .subtitle {
       font-size: 42px;
+    }
+
+    .subtitle-indication {
+      font-size: 27px;
     }
   }
 
@@ -69,6 +93,10 @@
     .subtitle {
       font-size: 50px;
     }
+
+    .subtitle-indication {
+      font-size: 33px;
+    }
   }
 
   @media (min-width: 1536px){
@@ -79,6 +107,10 @@
 
     .subtitle {
       font-size: 55px;
+    }
+
+    .subtitle-indication {
+      font-size: 38px;
     }
   }
 
@@ -443,38 +475,57 @@
 
   /* From Kyborq : https://codepen.io/podyganov/pen/qBOZvoQ */
   .mobile-phone {
-    background-color: var(--opposite-main-color);
-    margin: auto;
-    padding: 10px 10px 30px;
+    background-color: #000000;
+    margin: 30px auto 0 auto;
+    padding: 10px 10px 10px;
     width: 350px;
-    height: 600px;
+    max-height: 735px;
+    aspect-ratio: calc(350/735);
+    max-width: calc(100% - 30px);
     border-radius: 30px;
+    position: relative;
+    box-shadow: 0 0 20px #FFFFFF;
 
     .screen {
-      background-color: var(--opposite-main-color);
+      position: relative;
+      background-color: #000000;
       width: 100%;
       height: 100%;
       border-radius: 30px;
-      overflow-y: hidden;
+      overflow: hidden;
     }
 
     .brove {
-      width: 150px;
+      z-index: 1;
+      width: 90px;
       height: 20px;
-      background-color: var(--opposite-main-color);
+      background-color: #000000;
       position: absolute;
-      margin: 0 100px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
       border-radius: 0 0 20px 20px;
     }
 
     .speaker {
-      width: 60px;
+      width: 50px;
       height: 5px;
-      background-color: var(--main-color);
+      background-color: #E0E0E0;
       display: block;
       margin: auto;
       margin-top: 5px;
       border-radius: 20px;
+    }
+
+    .viewport {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      background-color: #101010;
+      background-size: cover;
+      background-position: center;
     }
   }
 }
