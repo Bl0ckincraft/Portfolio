@@ -260,16 +260,20 @@ class ProjectsController extends AbstractController
                 ],
                 "spotify_history_reader" => [
                     "isMobile" => true,
-                    "pictures" => [],
+                    "pictures" => [
+                        "1.webp" => ["picture", false],
+                        "2.webp" => ["picture", false],
+                        "3.webp" => ["picture", false],
+                        "4.webp" => ["picture", false]
+                    ],
                     "tags" => [
                         "dart",
                         "flutter",
                         "mobile_application"
                     ],
                     "steps" => [
-
-                    ],
-                    "ended" => false
+                        "update"
+                    ]
                 ],
                 "mhysb" => [
                     "isMobile" => false,

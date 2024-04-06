@@ -303,7 +303,13 @@ projects:
       desc: "Ce projet est un mod Minecraft visant à améliorer l'expérience de jeu sur le serveur <u>MineXplore</u> en proposant des ajouts pour les joueurs qui le souhaitent.<br/>Dans ce mod, j'ai commencé à développer des fonctionnalités affectant uniquement la vision du joueur (Client-Side) en proposant des outils en plus comme un système de recherche pour gagner du temps..."
     spotify_history_reader:
       title: "Streaming History Reader"
-      desc: "Cette application mobile est un outil permettant de lire, afficher et filtrer son historique d'écoute de la plateforme Spotify.<br/>Elle permet de regrouper les fichiers obtenus suite à une demande de données auprès de la plateforme et d'en visualiser les données..."
+      desc: "Cette application mobile est un outil permettant de lire, afficher et filtrer son historique d'écoute de la plateforme Spotify.<br/>Elle permet de regrouper les fichiers obtenus suite à une demande de données auprès de la plateforme et d'en visualiser le contenu..."
+      steps:
+        update:
+          title: "Amélioration de la prise en charge des données"
+          content: "Actuellement, l'application permet uniquement de lire les données extraites d'une requête de données de type « Account Data », contenant uniquement un an d'historique. Or, le prochain objectif de l'application serait d'être capable de lire le contenu d'une requête de données de type « Extended Streaming History », utilisant un autre format et contenant l'historique d'écoute depuis la création du compte."
+      detail:
+        desc: "Ce projet est une application mobile ayant pour objectif de lire et de visualiser son historique d'écoute Spotify. Pour fonctionner, l'utilisateur doit effectuer une requête de données à Spotify, puis importer les fichiers d'historique. L'application permet alors à son utilisateur de visualiser le nombre et le temps d'écoute pour chaque musique, mais aussi de connaître l'heure et la durée de chaque écoute du titre. De plus, elle permet de filtrer les musiques en fonction de leur nom ou de leur artiste."
     mhysb:
       title: "More Hypixel SkyBlock"
       desc: "Ce projet est un mod Minecraft visant à améliorer l'expérience de jeu sur le Skyblock du serveur Hypixel.<br/>Ce mod propose des fonctionnalités affectant uniquement la vision du joueur (Client-Side), comme la possibilité d'afficher des points de cheminement sur la carte..."
