@@ -127,7 +127,7 @@ tools:
 projects:
   title: "Mes Projets"
   subtitle: "Découvrir les projets que j'ai pu réaliser !"
-  subtitle_indication: "Projets codés 100% à la main, sans outils no-code"
+  subtitle_indication: "Codés 100% à la main, sans outils no-code"
   tags:
     java:
       name: "Java"
@@ -256,9 +256,18 @@ projects:
     portfolio:
       title: "Portfolio - John Doe"
       desc: "Ce site web est mon Portfolio.<br/>Dans ce projet, l'aspect graphique est très travaillé mais aussi l'aspect fonctionnel avec la possibilité de communiquer et de commander des services (à venir)..."
+      steps: null
+      detail:
+        desc: "Ce site web est le portfolio sur lequel vous vous trouvez. Son objectif est de me permettre de montrer les projets que j'ai pu réaliser, mais aussi de proposer mes services, et dans le futur de communiquer avec mes clients de manière efficace. Les principaux enjeux lors de la création de ce site ont été de trouver un design original et esthétique, tout en gardant une navigation et une compréhension simples, ainsi que de l'optimiser pour tous les formats et toutes les plateformes de lecture."
     portfolio_matthieu:
       title: "Portfolio - Matthieu Darmigny"
-      desc: "Ce site web est le Portfolio de M. Darmigny.<br/>Lors de cette commande, le but fut de créer un site correspondant au design fourni par le client tout en assurant l'accessibilité et l'adaptation aux différents types d'écrans..."
+      desc: "Ce site web est le Portfolio de Matthieu Darmigny.<br/>Lors de cette commande, le but fut de créer un site correspondant au design fourni par le client tout en assurant l'accessibilité et l'adaptation aux différents types d'écrans..."
+      steps:
+        update:
+          title: "Nécessité de mise à jour"
+          content: "Actuellement, ce site ne correspond pas encore à la qualité des services que je souhaite proposer, c'est pourquoi je me dois de le retravailler. En effet, comme expliqué précédemment, ce fut ma première commande et l'un des premiers sites que j'ai réalisés. Depuis, j'ai pu acquérir des connaissances sur l'optimisation des temps de chargement, ainsi que sur l'optimisation des médias tels que les images et vidéos. Une optimisation nécessaire qui fait défaut sur ce site pour le moment."
+      detail:
+        desc: "Ce site web est le portfolio de M. Matthieu Darmigny, disponible en cliquant <a style=\"text-decoration: underline; font-weight: 800;\" href=\"https://obd-matthieu.com\" target=\"_blank\">ici</a>. Ce fut ma première commande de site web, et en tant que telle, les principaux enjeux furent de comprendre et de satisfaire la requête du client. Ce projet fut créé sur la base d'un design et d'images fournies par le client, et adapté aux différents types de supports afin de le rendre « responsive »."
     angel_x_devil:
       title: "Angel X Devil"
       desc: "Ce projet, toujours en activité, est une boutique de mode en ligne.<br/>La création d'un site e-commerce assurant une navigation simple, ainsi que l'aspect de gestion et économique du projet sont les principaux enjeux..."

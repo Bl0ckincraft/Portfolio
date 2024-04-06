@@ -60,7 +60,11 @@ class ProjectsController extends AbstractController
                 ],
                 "portfolio" => [
                     "isMobile" => false,
-                    "pictures" => [],
+                    "pictures" => [
+                        "1.webp" => ["picture", true],
+                        "2.webp" => ["picture", true],
+                        "3.webp" => ["picture", true]
+                    ],
                     "tags" => [
                         "php",
                         "symfony",
@@ -70,11 +74,18 @@ class ProjectsController extends AbstractController
                     "steps" => [
 
                     ],
-                    "ended" => false
                 ],
                 "portfolio_matthieu" => [
                     "isMobile" => false,
-                    "pictures" => [],
+                    "pictures" => [
+                        "1.webp" => ["picture", false],
+                        "2.webp" => ["picture", true],
+                        "3.webp" => ["picture", true],
+                        "4.webp" => ["picture", true],
+                        "5.webp" => ["picture", true],
+                        "6.webp" => ["picture", true],
+                        "7.webp" => ["picture", true]
+                    ],
                     "tags" => [
                         "php",
                         "symfony",
@@ -82,9 +93,8 @@ class ProjectsController extends AbstractController
                         "website"
                     ],
                     "steps" => [
-
-                    ],
-                    "ended" => false
+                        "update"
+                    ]
                 ],
                 "angel_x_devil" => [
                     "isMobile" => false,
