@@ -304,18 +304,54 @@ projects:
     faylisia_plugin:
       title: "Faylisia - Plugin"
       desc: "En premier lieu, le nom de Faylisia devait être utilisé pour créer mon propre serveur Minecraft.<br/>L'objectif était de recréer l'ensemble des fonctionnalités du jeu, sous forme de plugin pour pouvoir le personnaliser sans que les joueurs aient besoin d'installer des modifications sur leur machine..."
+      steps:
+        team:
+          title: "Création d'une équipe"
+          content: "Par chance, un jour, j'ai rencontré un joueur qui a souhaité m'aider à élaborer ce projet. Nous fûmes alors deux à l'initiative du serveur. Nous avons alors cherché d'autres volontaires pour collecter des idées et créer des groupes hiérarchiques de builders, ceux qui s'occupent de construire et d'imaginer la carte du jeu. Une fois cela fait, la construction et le développement du serveur purent commencer. Cependant, nous avions entrepris un projet trop grand pour y travailler uniquement pendant notre temps libre et avec les moyens limités que nous possédions."
+        build:
+          title: "Création de la carte"
+          content: "La première étape a été de créer une carte pour organiser la construction. Suite à l'élaboration de cette carte comprenant les reliefs, les points d'eau et les différents climats, la construction a réellement pu commencer. Le spawn fut alors construit sur le thème d'une grande ville médiévale et les reliefs ont commencé à être formés. Vous pouvez notamment voir certaines parties de ces constructions ci-dessous."
+        development:
+          title: "Développement du plugin"
+          content: "Le développement a débuté en même temps. L'objectif était de créer un code permettant de créer n'importe quelle fonctionnalité, item, monstre et sort de manière simple sous la forme d'une configuration et sans avoir besoin de compétences en code. Bien que le développement avance de manière satisfaisante, coder un jeu entier dans un autre a demandé un temps trop grand. Cependant, un début de code est disponible sur mon GitHub (<a style=\"text-decoration: underline; font-weight: 800;\" target=\"_blank\" href=\"https://github.com/Bl0ckincraft/Faylisia-Plugin\">ici</a>)."
+      detail:
+        desc: "Ce plugin représente plus globalement un projet de serveur Minecraft. Le but de ce serveur que j'ai voulu fonder était de créer un MMORPG à l'intérieur de Minecraft, disponible pour tous sans installer quoi que ce soit sur sa propre machine. Pour cela, je me suis entouré d'une équipe de volontaires qui ont bien voulu m'accompagner dans ce projet. Cependant, le projet fut plus grand que prévu et malheureusement, nous étions trop peu nombreux pour le réaliser dans des délais raisonnables. Vous pourrez voir ci-dessous quelques extraits du travail de l'équipe qui m'a accompagné."
     our_little_world:
       title: "Our Little World"
       desc: "Our Little World est un projet de jeu vidéo en cours de création.<br/>J'aimerais dans ce projet, apprendre la modélisation 3D ainsi que l'utilisation d'outils complexes tels que le moteur Unreal Engine 5 avec le langage de programmation C++..."
+      steps:
+        3d:
+          title: "Modélisation 3D"
+          content: "Comme expliqué précédemment, j'ai donc commencé à apprendre la modélisation 3D avec Blender afin de tenter de créer moi-même les modèles que j'utiliserai dans mon jeu. J'ai d'abord commencé par des objets simples comme une tasse ou une pomme avant de me lancer dans la conception du personnage principal du jeu. Vous pouvez observer ci-dessous les modèles que j'ai commencé à créer."
+        improvement_ideas:
+          title: "Idées principales du jeu"
+          content: "Le concept principal du jeu est inspiré du jeu Bee Swarm Simulator sur Roblox. En effet, je souhaite créer un jeu où le personnage principal aura la taille d'un insecte. Il pourra alors développer et améliorer son arbre pour abriter des abeilles, des papillons et d'autres insectes afin d'améliorer sa production. Le jeu fonctionnerait avec des groupes de joueurs sur le même serveur, avec des événements réguliers et automatiques dans lesquels les joueurs pourront s'entraider ou être en compétition."
+      detail:
+        desc: "Our Little World est le jeu vidéo que je souhaite créer. Dans cet objectif, j'ai pour l'instant commencé à apprendre Unreal Engine en C++ et la modélisation 3D dans Blender. L'idée de créer un jeu vidéo me tentait depuis déjà quelques années, mais je ne souhaite pas créer un petit jeu avec des outils simples. J'ai décidé de me lancer le défi de créer un jeu vidéo 3D avec Unreal Engine et, si possible, de créer un jeu en ligne. L'idée de ce jeu en particulier m'est venue lorsque j'ai redécouvert le jeu Bee Swarm Simulator sur Roblox, jeu auquel j'ai joué plus jeune."
     auto_vote_hyping:
       title: "Auto Vote Hyping"
       desc: "Ce projet est un programme automatisant l'action de vote pour un serveur Minecraft.<br/>Il comprend un système d'automatisation d'un navigateur pour effectuer le vote, ainsi qu'un bot Discord me permettant d'informer son utilisateur de ses actions mais aussi de le contrôler à distance..."
+      steps:
+        robot:
+          title: "Résolution du Captcha"
+          content: "L'une des principales difficultés a été de contourner le Captcha du site de vote. Par chance, à cette époque, le Captcha utilisé n'était pas du tout sécurisé. En effet, il suffisait de cliquer sur l'icône qui apparaissait le plus de fois, avec un temps de latence tous les 5 essais. Cependant, en rafraîchissant la page, on pouvait passer outre le délai des 5 essais. Il m'a donc suffi de faire cliquer mon navigateur sur une icône au hasard, puis de réessayer jusqu'à ce que le Captcha soit validé."
+        discord:
+          title: "Création d'un bot Discord"
+          content: "J'ai ensuite créé un bot Discord pour faciliter le contrôle du programme. En effet, le bot envoie un message à son utilisateur à chaque vote pour le tenir au courant des votes effectués. De plus, l'utilisateur peut, à l'aide de commandes, désactiver les messages de votes, savoir dans combien de temps seront disponibles les prochains votes et activer ou désactiver le programme."
+      detail:
+        desc: "Auto Vote Hyping est un programme Java automatisant l'action de vote pour un serveur Minecraft du nom d'Hyping. Ce programme, capable de fonctionner sur un VPS Unix, permet à son utilisateur de réaliser le vote disponible toutes les 1h30 automatiquement, et ainsi d'avoir de grandes chances de terminer premier au classement des votes. Ce projet m'a permis d'améliorer mes connaissances sur les serveurs UNIX, ainsi que sur les navigateurs automatisés comme GeckoDriver ou ChromeDriver (Chromium)."
     l_systems:
-      title: "L-Systems"
-      desc: "Ce projet est une application de bureau, développée en Python dans le cadre de la spécialité NSI.<br/>Son objectif est de pouvoir créer des configurations afin de générer des structures \"naturelles\" suivant le principe des l-systems..."
+      title: "L-Systèmes"
+      desc: "Ce projet est une application de bureau, développée en Python dans le cadre de la spécialité NSI.<br/>Son objectif est de pouvoir créer des configurations afin de générer des structures \"naturelles\" suivant le principe des l-systèmes..."
+      steps: null
+      detail:
+        desc: "Cette application a été réalisée dans le cadre des cours de NSI. L'objectif était de créer un programme dessinant certains L-systèmes prédéfinis. Cependant, j'ai souhaité pousser le programme un peu plus loin. En effet, cette version de l'application permet de créer, dessiner, modifier et supprimer des formules de L-systèmes tout en stockant les modifications dans une base de données SQL. Vous pouvez observer un exemple dans les images ci-dessous."
     extracteur_article_pdf:
       title: "Extracteur d'article"
       desc: "Ce projet est une application de bureau.<br/>Elle a permis d'extraire des articles PDF du site du média La Dépêche, pour ensuite les stocker dans les archives de l'association Occitalien visant à soutenir l'Ukraine pendant la guerre..."
+      steps: null
+      detail:
+        desc: "Cette application de bureau a été conçue dans l'unique but d'aider l'association Occitalien à enregistrer et archiver les articles publiés par La Dépêche sur leur association. Développée en Java, cette application récupère la page HTML demandée, puis elle supprime les éléments tels que les publicités, les autres articles, les commentaires ou l'accès premium. Vous avez ci-dessous les 3 étapes de l'extraction d'un article : premièrement, on sélectionne un article, puis on l'entre dans l'application, et enfin on obtient une page HTML que l'on peut exporter en PDF pour l'archiver."
     faylisia_launcher:
       title: "Faylisia - Launcher"
       desc: "Cette application est un Launcher personnalisé pour le jeu Minecraft.<br/>Il permet de télécharger les mods présents sur le serveur moddé, et de lancer une configuration personnalisée permettant de jouer au même serveur entre amis sans avoir à mettre à jour les ressources manuellement..."

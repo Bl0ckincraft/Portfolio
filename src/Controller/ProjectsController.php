@@ -154,7 +154,12 @@ class ProjectsController extends AbstractController
                 ],
                 "faylisia_plugin" => [
                     "isMobile" => false,
-                    "pictures" => [],
+                    "pictures" => [
+                        "1.webp" => ["picture", false],
+                        "2.webp" => ["picture", false],
+                        "3.webp" => ["picture", false],
+                        "4.webp" => ["picture", false]
+                    ],
                     "tags" => [
                         "java",
                         "minecraft",
@@ -162,13 +167,17 @@ class ProjectsController extends AbstractController
                         "discord_bot"
                     ],
                     "steps" => [
-
-                    ],
-                    "ended" => false
+                        "team",
+                        "build",
+                        "development"
+                    ]
                 ],
                 "our_little_world" => [
                     "isMobile" => false,
-                    "pictures" => [],
+                    "pictures" => [
+                        "1.webp" => ["picture", false],
+                        "2.webp" => ["picture", false]
+                    ],
                     "tags" => [
                         "unrealised",
                         "planed",
@@ -180,13 +189,15 @@ class ProjectsController extends AbstractController
                         "discord_bot"
                     ],
                     "steps" => [
-
-                    ],
-                    "ended" => false
+                        "3d",
+                        "improvement_ideas"
+                    ]
                 ],
                 "auto_vote_hyping" => [
                     "isMobile" => false,
-                    "pictures" => [],
+                    "pictures" => [
+                        "1.webp" => ["picture", false]
+                    ],
                     "tags" => [
                         "java",
                         "api",
@@ -196,25 +207,31 @@ class ProjectsController extends AbstractController
                         "discord_bot"
                     ],
                     "steps" => [
-
-                    ],
-                    "ended" => false
+                        "robot",
+                        "discord"
+                    ]
                 ],
                 "l_systems" => [
                     "isMobile" => false,
-                    "pictures" => [],
+                    "pictures" => [
+                        "1.webp" => ["picture", false],
+                        "2.webp" => ["picture", false]
+                    ],
                     "tags" => [
                         "python",
                         "desktop_application"
                     ],
                     "steps" => [
 
-                    ],
-                    "ended" => false
+                    ]
                 ],
                 "extracteur_article_pdf" => [
                     "isMobile" => false,
-                    "pictures" => [],
+                    "pictures" => [
+                        "1.webp" => ["picture", true],
+                        "2.webp" => ["picture", false],
+                        "3.webp" => ["picture", true]
+                    ],
                     "tags" => [
                         "java",
                         "desktop_application",
@@ -223,8 +240,7 @@ class ProjectsController extends AbstractController
                     ],
                     "steps" => [
 
-                    ],
-                    "ended" => false
+                    ]
                 ],
                 "faylisia_launcher" => [
                     "isMobile" => false,
