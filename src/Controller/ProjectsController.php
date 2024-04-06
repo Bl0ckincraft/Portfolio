@@ -244,7 +244,9 @@ class ProjectsController extends AbstractController
                 ],
                 "faylisia_launcher" => [
                     "isMobile" => false,
-                    "pictures" => [],
+                    "pictures" => [
+                        "1.webp" => ["picture", false],
+                        ],
                     "tags" => [
                         "java",
                         "desktop_application",
@@ -254,12 +256,13 @@ class ProjectsController extends AbstractController
                     ],
                     "steps" => [
 
-                    ],
-                    "ended" => false
+                    ]
                 ],
                 "minexplore_tracker" => [
                     "isMobile" => false,
-                    "pictures" => [],
+                    "pictures" => [
+                        "1.webp" => ["picture", false],
+                    ],
                     "tags" => [
                         "java",
                         "plugin",
@@ -268,12 +271,13 @@ class ProjectsController extends AbstractController
                     ],
                     "steps" => [
 
-                    ],
-                    "ended" => false
+                    ]
                 ],
                 "minexplore_addons" => [
                     "isMobile" => false,
-                    "pictures" => [],
+                    "pictures" => [
+                        "1.webp" => ["picture", false],
+                    ],
                     "tags" => [
                         "java",
                         "modding",
@@ -281,8 +285,7 @@ class ProjectsController extends AbstractController
                     ],
                     "steps" => [
 
-                    ],
-                    "ended" => false
+                    ]
                 ],
                 "spotify_history_reader" => [
                     "isMobile" => true,
@@ -303,7 +306,11 @@ class ProjectsController extends AbstractController
                 ],
                 "mhysb" => [
                     "isMobile" => false,
-                    "pictures" => [],
+                    "pictures" => [
+                        "1.webp" => ["picture", false],
+                        "2.webp" => ["picture", false],
+                        "3.webp" => ["picture", false]
+                    ],
                     "tags" => [
                         "java",
                         "modding",
@@ -312,9 +319,9 @@ class ProjectsController extends AbstractController
                         "automating"
                     ],
                     "steps" => [
-
-                    ],
-                    "ended" => false
+                        "robot",
+                        "imitation"
+                    ]
                 ],
                 "infoclass" => [
                     "isMobile" => false,

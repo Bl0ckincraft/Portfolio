@@ -355,12 +355,21 @@ projects:
     faylisia_launcher:
       title: "Faylisia - Launcher"
       desc: "Cette application est un Launcher personnalisé pour le jeu Minecraft.<br/>Il permet de télécharger les mods présents sur le serveur moddé, et de lancer une configuration personnalisée permettant de jouer au même serveur entre amis sans avoir à mettre à jour les ressources manuellement..."
+      steps: null
+      detail:
+        desc: "Dans le but de jouer ensemble à une version moddée du jeu Minecraft, j'ai créé un launcher permettant d'effectuer les mises à jour de mods automatiquement et facilitant l'accès au serveur. De plus, j'ai créé un système d'annonce de mise à jour sur le launcher. Ces annonces sont synchronisées via des requêtes à l'API du serveur. Enfin, j'ai dû implémenter l'API Microsoft pour permettre aux utilisateurs de mon launcher de se connecter à leur compte Minecraft, stocké par Microsoft."
     minexplore_tracker:
       title: "MineXplore Tracker"
       desc: "Ce projet est une application et un plugin Minecraft développés pour le serveur <u>MineXplore</u>.<br/>Elle permet de récupérer des logs sur les activités des joueurs d'un serveur Minecraft de manière très précise, puis de les afficher et de les lire avec une application de bureau..."
+      steps: null
+      detail:
+        desc: "Cette application Java est associée à un plugin Minecraft, développé pour le serveur <u>MineXplore</u> dans le but de surveiller certains joueurs soupçonnés de vouloir faire bugger le serveur. Pour cela, le plugin enregistre un grand nombre d'actions de chaque joueur dans une base de données, et les rend accessibles via une application de bureau pour pouvoir analyser les actions de chaque joueur."
     minexplore_addons:
       title: "MineXplore Addons"
       desc: "Ce projet est un mod Minecraft visant à améliorer l'expérience de jeu sur le serveur <u>MineXplore</u> en proposant des ajouts pour les joueurs qui le souhaitent.<br/>Dans ce mod, j'ai commencé à développer des fonctionnalités affectant uniquement la vision du joueur (Client-Side) en proposant des outils en plus comme un système de recherche pour gagner du temps..."
+      steps: null
+      detail:
+        desc: "Ce mod Minecraft vise à améliorer l'expérience de jeu sur le serveur <u>MineXplore</u>. Pour ce faire, il propose des fonctionnalités pour simplifier certaines tâches du jeu. En effet, il permet de copier à l'aide d'un bouton les messages dans le chat, d'afficher l'animation de son personnage à l'extrémité de l'écran comme sur la version Bedrock et d'afficher un overlay sur l'écran permettant de voir la durabilité de l'item dans sa main. Cependant, la fonctionnalité la plus utile de ce mod est de pouvoir rechercher les items dans les coffres et les inventaires, en affichant en vert les items dont le nom correspond, en bleu les items dont les enchantements correspondent et en violet les livres enchantés dont les enchantements correspondent."
     spotify_history_reader:
       title: "Streaming History Reader"
       desc: "Cette application mobile est un outil permettant de lire, afficher et filtrer son historique d'écoute de la plateforme Spotify.<br/>Elle permet de regrouper les fichiers obtenus suite à une demande de données auprès de la plateforme et d'en visualiser le contenu..."
@@ -373,6 +382,15 @@ projects:
     mhysb:
       title: "More Hypixel SkyBlock"
       desc: "Ce projet est un mod Minecraft visant à améliorer l'expérience de jeu sur le Skyblock du serveur Hypixel.<br/>Ce mod propose des fonctionnalités affectant uniquement la vision du joueur (Client-Side), comme la possibilité d'afficher des points de cheminement sur la carte..."
+      steps:
+        robot:
+          title: "Première automatisation : Farm dans les champs"
+          content: "Ma première idée fut de créer une macro permettant à mon jeu de cultiver les plantes tout seul. Le serveur ayant un système de replantage automatique, il ne me restait plus qu'à gérer le mouvement et le clic. Une fois cela fait, j'ai décidé d'améliorer la macro en lui ajoutant la possibilité de se reconnecter et de se replacer dans le champ en cas de redémarrage du serveur, de m'alerter via un bot discord en cas de loot rare, de se débloquer si cela devait arriver et de m'informer de mes offres de vente et d'achat pour me permettre de faire fructifier mon argent en parallèle de son fonctionnement. Je peux aussi décider d'activer et de désactiver cette macro via une commande de mon bot discord, cela m'a permis d'expérimenter la macro sur une longue durée (20h) en me rendant à mon bac de français, me permettant de conclure qu'elle pouvait bel et bien se débloquer et se reconnecter toute seule."
+        imitation:
+          title: "Seconde automatisation : Minage dans la ruby route"
+          content: "Suite à des mises à jour du serveur rendant ma macro inutilisable sans amélioration et le manque de rentabilité de celle-ci, j'ai voulu tenter une autre automatisation. Le principe est plutôt simple, il s'agit de créer une phase dite « d'écoute », durant laquelle le programme enregistre les touches et clics que j'exécute afin de les enregistrer dans un fichier. Il fallait ensuite créer une phase dite « d'exécution », durant laquelle le mod allait répéter avec les mêmes durées chacune de mes actions et ainsi me permettre d'automatiser n'importe quel aspect du jeu pouvant fonctionner sur une boucle de farm. L'idée fut donc de l'appliquer au minage, en effet, les minerais sur le serveur se régénèrent automatiquement et au même endroit, ce qui permet de suivre ce que l'on appelle des « ruby routes ». Cependant, cette méthode fut un échec, car la latence n'est pas constante entre l'envoi et la réception du paquet de mouvement, ce qui causa un décalage dans les mouvements."
+      detail:
+        desc: "Ce mod Minecraft a été créé pour améliorer mon expérience de jeu sur le Skyblock du serveur Hypixel. Dans ce but, mon premier objectif était de recréer des fonctionnalités utilitaires à l'image des mods SBA, SBE, NEU et SkyHanni. J'ai notamment créé un système de waypoint pour afficher une ruby route au lieu d'en chercher les coordonnées manuellement. Cependant, j'ai finalement préféré tenter des expériences sur l'automatisation de certaines tâches comme vous pourrez le voir dans les catégories ci-dessous."
     infoclass:
       title: "InfoClass"
       desc: "Ce projet de plateforme web n'a pas encore eu l'occasion de voir le jour.<br/>Consistant à créer une plateforme pratique d'utilisation pour les élèves et les professeurs des écoles, ce projet a pour but de rassembler les principales fonctionnalités d'Ecole Directe et de Google Classroom pour en tirer les avantages et y ajouter les avantages d'une modernité..."
