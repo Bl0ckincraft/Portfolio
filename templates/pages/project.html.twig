@@ -54,8 +54,10 @@
                                 <div id="next-button"></div>
                             {% endif %}
                             {% for picture, pictureOptions in projectData.pictures %}
-                                <div class="viewport absolute {% if pictureOptions[1] %}pic-scroll{% endif %}" style="background-image:url('{{ asset("images/projects/detail/" ~ project ~ "/" ~ picture) }}');">
-                                </div>
+                                {% if pictureOptions[0] == "picture" %}
+                                    <div class="viewport absolute {% if pictureOptions[1] %}pic-scroll{% endif %}" style="background-image:url('{{ asset("images/projects/detail/" ~ project ~ "/" ~ picture) }}');">
+                                    </div>
+                                {% endif %}
                             {% endfor %}
                         </div>
                     </div>
@@ -68,8 +70,14 @@
                                     <div id="next-button"></div>
                                 {% endif %}
                                 {% for picture, pictureOptions in projectData.pictures %}
-                                    <div class="viewport absolute {% if pictureOptions[1] %}pic-scroll{% endif %} {% if loop.index == 1 %}completely-shown{% endif %}" style="background-image:url('{{ asset("images/projects/detail/" ~ project ~ "/" ~ picture) }}');">
-                                    </div>
+                                    {% if pictureOptions[0] == "picture" %}
+                                        <div class="viewport absolute {% if pictureOptions[1] %}pic-scroll{% endif %} {% if loop.index == 1 %}completely-shown{% endif %}" style="background-image:url('{{ asset("images/projects/detail/" ~ project ~ "/" ~ picture) }}');">
+                                        </div>
+                                    {% elseif pictureOptions[0] == "pdf" %}
+                                        <div class="viewport absolute {% if loop.index == 1 %}completely-shown{% endif %}">
+                                            <embed width="100%" height="100%" src="{{ asset("images/projects/detail/" ~ project ~ "/" ~ picture) }}"/>
+                                        </div>
+                                    {% endif %}
                                 {% endfor %}
                             </div>
                         </div>

@@ -316,5 +316,14 @@ projects:
     infoclass:
       title: "InfoClass"
       desc: "Ce projet de plateforme web n'a pas encore eu l'occasion de voir le jour.<br/>Consistant à créer une plateforme pratique d'utilisation pour les élèves et les professeurs des écoles, ce projet a pour but de rassembler les principales fonctionnalités d'Ecole Directe et de Google Classroom pour en tirer les avantages et y ajouter les avantages d'une modernité..."
+      steps:
+        source:
+          title: "Source du projet"
+          content: "L'idée du projet nous est venue suite aux remarques négatives des enseignants et des élèves sur les plateformes actuellement utilisées. En effet, certains professeurs refusaient d'utiliser certaines fonctionnalités de ces plateformes à cause d'un manque de simplicité, et certaines fonctionnalités manquaient pour simplifier le travail de la vie scolaire. De plus, certaines de ces plateformes ne respectaient pas totalement la RGPD et la confidentialité des données."
+        update:
+          title: "Perspective de développement"
+          content: "Cependant, je pense que ce projet serait intéressant à réaliser et qu'il permettrait d'aider certains établissements scolaires. C'est pourquoi j'aimerais tenter de le mettre en place et de le publier, à condition d'avoir le temps nécessaire en parallèle de mes études pour le développer."
+      detail:
+        desc: "Ce projet de plateforme web n'a pas encore eu l'occasion de voir le jour. Son objectif est de permettre aux enseignants et aux élèves de pouvoir communiquer et travailler de manière simple et efficace, en reprenant les principales fonctionnalités d'Ecole Directe et de Google Classroom tout en y ajoutant des fonctionnalités inédites. Ce projet avait pour but d'être réalisé avec le soutien du lycée, mais n'a finalement pas vu le jour car pour l'établissement, un changement de plateforme impliquait une logistique importante, surtout pour une plateforme développée par des élèves. Un document de présentation avec plus d'informations est disponible ci-dessous."
 services:
   soon: "Prochainement..."

@@ -14,8 +14,8 @@ class ProjectsController extends AbstractController
      *
      * "pictures" represents medias, they should be written like :
      *      "filename.ext" => [type, scrollable]" with :
-     *      - type = "picture" or "video" (video not implemented yet)
-     *      - scrollable = true or false depending on if media should scroll when hovered
+     *      - type = "picture", "video" or "pdf" (video not implemented yet)
+     *      - scrollable = true or false depending on if media should scroll when hovered (needed only if media type is picture)
      */
     private array $projects = [
                 "spotify_overlay" => [
@@ -292,7 +292,9 @@ class ProjectsController extends AbstractController
                 ],
                 "infoclass" => [
                     "isMobile" => false,
-                    "pictures" => [],
+                    "pictures" => [
+                        "1.pdf" => ["pdf"]
+                    ],
                     "tags" => [
                         "unrealised",
                         "website",
@@ -301,9 +303,9 @@ class ProjectsController extends AbstractController
                         "symfony"
                     ],
                     "steps" => [
-
-                    ],
-                    "ended" => false
+                        "source",
+                        "update"
+                    ]
                 ]
             ];
 
