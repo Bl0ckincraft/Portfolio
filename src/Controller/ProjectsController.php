@@ -117,7 +117,9 @@ class ProjectsController extends AbstractController
                 ],
                 "kingdoms_plugin" => [
                     "isMobile" => false,
-                    "pictures" => [],
+                    "pictures" => [
+                        "1.webp" => ["picture", false]
+                    ],
                     "tags" => [
                         "java",
                         "minecraft",
@@ -126,13 +128,18 @@ class ProjectsController extends AbstractController
                         "web"
                     ],
                     "steps" => [
-
-                    ],
-                    "ended" => false
+                        "kingdoms",
+                        "collections"
+                    ]
                 ],
                 "kingdoms_app" => [
                     "isMobile" => true,
-                    "pictures" => [],
+                    "pictures" => [
+                        "1.webp" => ["picture", false],
+                        "2.webp" => ["picture", false],
+                        "3.webp" => ["picture", false],
+                        "4.webp" => ["picture", false]
+                    ],
                     "tags" => [
                         "dart",
                         "flutter",
@@ -142,9 +149,8 @@ class ProjectsController extends AbstractController
                         "minecraft"
                     ],
                     "steps" => [
-
-                    ],
-                    "ended" => false
+                        "api"
+                    ]
                 ],
                 "faylisia_plugin" => [
                     "isMobile" => false,
