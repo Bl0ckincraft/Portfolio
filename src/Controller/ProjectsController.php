@@ -98,7 +98,11 @@ class ProjectsController extends AbstractController
                 ],
                 "angel_x_devil" => [
                     "isMobile" => false,
-                    "pictures" => [],
+                    "pictures" => [
+                        "1.webp" => ["picture", true],
+                        "2.webp" => ["picture", false],
+                        "3.webp" => ["picture", false]
+                    ],
                     "tags" => [
                         "php",
                         "symfony",
@@ -107,9 +111,9 @@ class ProjectsController extends AbstractController
                         "shop"
                     ],
                     "steps" => [
-
-                    ],
-                    "ended" => false
+                        "clothes",
+                        "mailbox"
+                    ]
                 ],
                 "kingdoms_plugin" => [
                     "isMobile" => false,

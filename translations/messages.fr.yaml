@@ -271,6 +271,15 @@ projects:
     angel_x_devil:
       title: "Angel X Devil"
       desc: "Ce projet, toujours en activité, est une boutique de mode en ligne.<br/>La création d'un site e-commerce assurant une navigation simple, ainsi que l'aspect de gestion et économique du projet sont les principaux enjeux..."
+      steps:
+        clothes:
+          title: "Objectif de la marque"
+          content: "Outre l'aspect informatique, ce projet me permet de comprendre les enjeux économiques de la création d'une marque, en partant de la complexité des designs, de la qualité et des choix de fournisseurs. Notre marque a pour objectif de créer des vêtements avec un style inédit et une spécificité qui lui est propre, que vous pourrez découvrir lors de son lancement. Nous souhaitons vendre des vêtements de qualité fabriqués en France ou en Europe afin de satisfaire nos clients dans la durée."
+        mailbox:
+          title: "Boîte e-mail"
+          content: "Lors de ce projet, en souhaitant créer un système de messagerie électronique professionnel utilisant notre nom de domaine de manière gratuite, j'ai pu explorer les systèmes de messagerie tels que les protocoles SMTP et IMAP, ainsi que me confronter à la gestion des messages, des registres de noms et des pièces jointes. J'estime que la mise en place de cette messagerie m'a permis d'en apprendre beaucoup sur le domaine, mais aussi sur les certificats de sécurité et sur certains fonctionnements d'UNIX."
+      detail:
+        desc: "Angel x Devil est une boutique de mode en ligne, toujours en cours de création. Le design est donc temporaire et sera complètement recréé prochainement. Dans ce projet à deux, mon associée gère le style et le design de la marque, tandis que je m'occupe de l'aspect informatique. La partie économique est quant à elle gérée par nous deux. Le réel intérêt du projet d'un point de vue informatique fut de créer un code backend complexe et sécurisé permettant de créer des comptes, gérer des produits, commander des produits et d'autres fonctionnalités destinées principalement aux administrateurs. En effet, ce projet e-commerce m'a pour l'instant permis de découvrir plusieurs outils tels que Stripe pour gérer les paiements, mais aussi de me confronter aux problèmes de sécurité et de simplicité pour les administrateurs. Le site est disponible en cliquant <a style=\"text-decoration: underline; font-weight: 800;\" href=\"https://angel-x-devil.fr\" target=\"_blank\">ici</a>."
     kingdoms_plugin:
       title: "Kingdoms - Plugin"
       desc: "Ce plugin Minecraft fut créé pour le serveur <u>MineXplore</u>.<br/>Dans ce projet, la requête était de créer un ensemble de fonctionnalités, permettant aux joueurs de protéger leurs zones de jeux en créant un Royaume. Ils devaient également pouvoir créer des groupes et faire évoluer leur Royaume..."
