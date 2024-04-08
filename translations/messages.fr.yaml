@@ -3,7 +3,7 @@ welcome: "Accueil"
 description: ""
 parcoursup:
   welcome: "Bienvenue !"
-  content: "Bonjour, je vous remercie de visiter mon portfolio que j'ai anonymiser sous le nom de John Doe pour respecter les règles de Parcoursup.<br/>Ce portfolio est codé sans outils no-code et 100% à la main, il est également personnalisable, en effet, vous pouvez modifier les thèmes dans le menu.<br/>Pour une meilleure expérience, je peux vous conseiller de le visionner sur un ordinateur et de naviguer en utilisant le menu en haut à droite.<br/>En vous souhaitant une bonne visite!"
+  content: "Bonjour, je vous remercie de visiter mon portfolio que j'ai anonymisé sous le nom de John Doe pour respecter les règles de Parcoursup.<br/>Ce portfolio est codé sans outils no-code et à 100% à la main. De plus, il est entièrement personnalisable, en effet, vous pouvez modifier les thèmes dans le menu.<br/>Pour une meilleure expérience, je vous conseille de le visionner sur un ordinateur et de naviguer en utilisant le menu en haut à droite.<br/>Je vous souhaite une agréable visite !"
   close: "Fermer"
   projectNotEnded: "Veuillez m'excuser, la page pour ce projet n'est pas encore disponible, elle devrait l'être à partir du dimanche 7 avril."
 home:
